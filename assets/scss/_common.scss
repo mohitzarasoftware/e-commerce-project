@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    font-family: "Inter", serif !important;
+}
+
+.h-full{
+    height: 100% !important;
+}
+.w-full {
+    width: 100% !important;
+}
+.bg-theme1 {
+    background-color: #FF0004;
+}
+.bg-btn-theme1 {
+    background-color: #FF0004;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #b3070a;
+    }
+}
+.text-theme1 {
+    color: #FF0004;
+}
+
+@mixin xl {
+    @media (max-width:1200px){
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width:991px){
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width:767px){
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width:576px){
+        @content;
+    }
+}

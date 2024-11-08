@@ -1,0 +1,17 @@
+/* SCSS - Base classes for background and text color */
+.bg-custom {
+    background-color: var(--dynamic-bg-color) !important;
+}
+
+.text-custom {
+    color: var(--dynamic-text-color) !important;
+}
+
+/* Hover classes using CSS variables */
+.hover\:bg-custom:hover {
+    background-color: var(--dynamic-bg-hover-color) !important;
+}
+
+.hover\:text-custom:hover {
+    color: var(--dynamic-text-hover-color) !important;
+}

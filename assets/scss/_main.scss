@@ -1,0 +1,21 @@
+$theme1:#FF0004;
+$theme2:#383355;
+$white:#fff;
+$black:#000;
+
+
+// navbar start
+.main-navbar {
+    background-color: $theme2;
+    & .top-bar{
+        border-bottom: 1px solid rgba($white, 0.3);
+        & .nav-social-link {
+            border-right: 1px solid rgba($white, 0.3);
+            color: $theme1;
+        }
+    }
+    & .nav-search-main {
+        & .nav-search-btn{}
+    }
+}
+// navbar end
