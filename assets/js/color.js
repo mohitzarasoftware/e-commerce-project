@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to apply dynamic colors based on class names
     document.querySelectorAll('[class*="bg-["], [class*="text-["], [class*="hover:bg-["], [class*="hover:text-["]').forEach(element => {
         element.classList.forEach(cls => {
-            // Match classes like `bg-[#123456]` or `text-[#123456]`
-            const bgMatch = cls.match(/^bg-\[(#[\da-fA-F]{6})\]$/);
-            const textMatch = cls.match(/^text-\[(#[\da-fA-F]{6})\]$/);
+            // Match classes like `bg-[#123456]`, `bg-[#fff]`, `text-[#123456]`, or `text-[#fff]`
+            const bgMatch = cls.match(/^bg-\[(#[\da-fA-F]{3,6})\]$/);
+            const textMatch = cls.match(/^text-\[(#[\da-fA-F]{3,6})\]$/);
 
-            // Match hover classes like `hover:bg-[#123456]` or `hover:text-[#123456]`
-            const hoverBgMatch = cls.match(/^hover:bg-\[(#[\da-fA-F]{6})\]$/);
-            const hoverTextMatch = cls.match(/^hover:text-\[(#[\da-fA-F]{6})\]$/);
+            // Match hover classes like `hover:bg-[#123456]` or `hover:text-[#fff]`
+            const hoverBgMatch = cls.match(/^hover:bg-\[(#[\da-fA-F]{3,6})\]$/);
+            const hoverTextMatch = cls.match(/^hover:text-\[(#[\da-fA-F]{3,6})\]$/);
 
             if (bgMatch) {
                 const color = bgMatch[1];

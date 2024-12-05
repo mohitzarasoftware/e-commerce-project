@@ -35,4 +35,12 @@
       }
     }
   }
+
+  @media (min-width: 1400px) { // For extra-large devices and up
+    @for $i from 1 through 100 {
+      .fs-xxl-#{$i} {
+        font-size: #{$i}px !important;
+      }
+    }
+  }
   

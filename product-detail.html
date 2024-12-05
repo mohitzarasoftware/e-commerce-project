@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section start -->
+    <nav class="main-navbar">
+        <div class="top-bar w-full py-3">
+            <div class="container w-full">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-25">
+                            <div class="topbar-social-title fw-medium text-white">
+                                Don’t forgot to follow us:
+                            </div>
+                            <ul class="list-unstyled d-flex mb-0 align-items-center">
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="topbar-social-title fw-medium text-white">
+                            Customer Support Team: +91-98765-43210
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-center py-12">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="index.html" class="d-flex align-items-center justify-content-center h-41">
+                            <img src="assets/img/logo.png" alt="navbar logo" class="h-full w-full img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="nav-search-main h-45 d-flex br-5 overflow-hidden">
+                            <div class="nav-search-iput-main bg-white w-full d-flex align-items-center px-13">
+                                <span class="nav-search-icon text-[#5C5C5C] fs-15 d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="h-full form-control shadow-none border-0 fs-14 text-[##5D5D5D]" placeholder="Search products">
+                            </div>
+                            <div class="h-full">
+                                <button class="border-0 nav-search-btn bg-btn-theme1 text-white d-block h-full px-20">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-30">
+                            <div class="d-flex align-items-center gap-25">
+                                <div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="w-24 h-15 d-flex align-items-center justify-content-center"><img src="assets/img/india-flag.svg" alt="india flag" class="h-full w-full img-fluid" width="25" height="16"></span>
+                                        <i class="fa-solid fa-chevron-down text-white fs-13"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        English
+                                    </div>
+                                </div>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Account
+                                    </div>
+                                </a>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Favourites 
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="nav-cart-btn bg-btn-theme1 d-flex py-10 px-11 br-8 text-decoration-none align-items-center gap-11">
+                                    <span class="d-inline-flex align-items-center nav-btn-icon position-relative justify-content-center h-27">
+                                        <img src="assets/img/cart-icon.svg" alt="cart" class="h-full w-full">
+                                        <span class="text-theme1 h-17 nav-cart-btn-count top-n5 right-n5 w-17 fs-12 rounded-circle d-flex align-items-center justify-content-center bg-white fw-medium position-absolute">
+                                            3
+                                        </span>
+                                    </span>
+                                    <span class="text-[#fff] fs-14 fw-medium">$225</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end --> 
+
+    <!-- category section start -->
+    <section class="category-section position-relative bg-[#E4DFFF] py-7">
+        <div class="container">
+            <div class="swiper nav-category-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/electric-icon.png" alt="electric" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/kids-fashion.png" alt="kids" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Kids Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/men-category.png" alt="men" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Men Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/women-category.png" alt="women" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Women Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/grocery.png" alt="grocery" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Grocery</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/personal-care.png" alt="personal care" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Personal Care</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/toys-gifts.png" alt="toys gifts" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Toys & Gifts</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/home-decoration.png" alt="home decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Home Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/office-decoration.png" alt="office decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Office Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/appliances.png" alt="Appliances" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Appliances</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/mobile.png" alt="mobile" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Mobile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-next h-full bg-white position-absolute d-flex align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 end-0"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="swiper-prev h-full bg-white position-absolute d-flex align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 start-0"><i class="fa-solid fa-chevron-left"></i></div>
+    </section>
+    <!-- category section end -->
+
+    <!-- product detail section start -->
+    <section class="product-hero-section position-relative overflow-hidden">
+        <div class="container">
+            <div class="row position-relative flex-nowrap align-items-center ">
+                <div class="col-auto">
+                    <div thumbsSlider="" class="swiper product_hero_sidebar pr-15">
+                        <div class="swiper-wrapper flex-column gap-18">
+                            <div class="swiper-slide w-180 h-105">
+                                <div class="product-hero-sidebar-img position-relative h-full w-full br-10">
+                                    <img src="assets/img/product-detail-1.png" alt="product" class="w-full h-full br-10" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-180 h-105">
+                                <div class="product-hero-sidebar-img position-relative h-full w-full br-10">
+                                    <img src="assets/img/product-detail-2.png" alt="product" class="w-full h-full br-10" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-180 h-105">
+                                <div class="product-hero-sidebar-img position-relative h-full w-full br-10">
+                                    <img src="assets/img/product-detail-3.png" alt="product" class="w-full h-full br-10" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-180 h-105">
+                                <div class="product-hero-sidebar-img position-relative h-full w-full br-10">
+                                    <img src="assets/img/product-detail-4.png" alt="product" class="w-full h-full br-10" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="swiper product_hero w-full h-full">
+                        <div class="swiper-wrapper h-full">
+                            <div class="swiper-slide w-full">
+                                <div class="product-hero-img h-530 overflow-hidden">
+                                    <img src="assets/img/product-detail.png" alt="product" class="w-full h-full" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fulll h-full">
+                                <div class="product-hero-img h-530 overflow-hidden">
+                                    <img src="assets/img/product-detail.png" alt="product" class="w-full h-full" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fulll h-full">
+                                <div class="product-hero-img h-530 overflow-hidden">
+                                    <img src="assets/img/product-detail.png" alt="product" class="w-full h-full" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fulll h-full">
+                                <div class="product-hero-img h-530 overflow-hidden">
+                                    <img src="assets/img/product-detail.png" alt="product" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col pl-lg-50">
+                    <div class="py-30">
+                        <h1 class="product-hero-heading position-relative fs-32 text-white lh-48 fw-semibold mb-0">
+                            This is the detailed product title with some short description
+                        </h1>
+                        <div class="product-hero-visit-link-main mt-25 pb-15 d-flex align-items-center justify-content-between">
+                            <a href="" class="product-hero-visit-link fs-17 text-decoration-none d-flex align-items-center gap-9">Visit the Nike Store
+                                <span class="text-white fs-18 product-hero-visit-link-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                            </a>
+                            <div class="d-flex align-items-center gap-6">
+                                <div class="fs-22 text-white fw-medium">4.2 | </div>
+                                <ul class="list-unstyled d-flex p-0 m-0 d-flex align-items-center gap-5">
+                                    <li class="text-[#F2A801]"><i class="fa-solid fa-star"></i></li>
+                                    <li class="text-[#F2A801]"><i class="fa-solid fa-star"></i></li>
+                                    <li class="text-[#F2A801]"><i class="fa-solid fa-star"></i></li>
+                                    <li class="text-[#F2A801]"><i class="fa-solid fa-star"></i></li>
+                                    <li class="text-[#F2A801]"><i class="fa-solid fa-star-half-stroke"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-15">
+                            <div class="product-hero-price-main d-flex align-items-center gap-18">
+                                <div class="product-hero-price-title fw-medium fs-17 text-white">Price:</div>
+                                <div class="d-flex align-items-center gap-13">
+                                    <div class="product-hero-price text-[#00BF20] fw-bold fs-22">
+                                        ₹ 249.90 /-
+                                    </div>
+                                    <del class="product-hero-price text-[#FFFFFFBF] fs-22">
+                                        ₹ 849.90 /-
+                                    </del>
+                                </div>
+                            </div>
+                            <div class="product-hero-offer text-theme1 fw-medium fs-17 pr-20 pl-40 rounded-end-5 py-10">
+                                -66% OFF
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-20 pl-60 justify-content-between">
+                            <ul class="d-flex list-unstyled flex-column m-0 p-0 gap-14 product-hero-policy">
+                                <li class="d-flex align-items-center gap-8 text-white fs-16 fw-medium"><i class="fa-solid fa-circle-check"></i>24/7 Support</li>
+                                <li class="d-flex align-items-center gap-8 text-white fs-16 fw-medium"><i class="fa-solid fa-circle-check"></i>21 Days Replacement</li>
+                                <li class="d-flex align-items-center gap-8 text-white fs-16 fw-medium"><i class="fa-solid fa-circle-check"></i>Secure Payment Option</li>
+                                <li class="d-flex align-items-center gap-8 text-white fs-16 fw-medium"><i class="fa-solid fa-circle-check"></i>Cash-On-Deliver available</li>
+                                <li class="d-flex align-items-center gap-8 text-white fs-16 fw-medium"><i class="fa-solid fa-circle-check"></i>Fast Shipment</li>
+                            </ul>
+                            <div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="text-white fw-medium fs-18 product-hero-size-title">Select Size</div>
+                                    <select name="" id="" class="form-select w-auto shadow-none br-30 px-40 fs-15 fw-medium mt-8 product-hero-size-select">
+                                        <option value="l">L</option>
+                                        <option value="m">M</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex mt-30 gap-10">
+                                    <div class="product-hero-choose-color">
+                                        <input type="radio" name="color_chhose" id="blue" checked hidden>
+                                        <label for="blue" class="product-hero-color-select h-28 w-28 br-40 text-white fs-16 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-check"></i>
+                                        </label>
+                                    </div>
+                                    <div class="product-hero-choose-color">
+                                        <input type="radio" name="color_chhose" id="light-green" hidden>
+                                        <label for="light-green" class="product-hero-color-select product-hero-green-select h-28 w-28 br-40 text-white fs-16 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-check"></i>
+                                        </label>
+                                    </div>
+                                    <div class="product-hero-choose-color">
+                                        <input type="radio" name="color_chhose" id="yellow" hidden>
+                                        <label for="yellow" class="product-hero-color-select product-hero-yellow-select h-28 w-28 br-40 text-white fs-16 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-check"></i>
+                                        </label>
+                                    </div>
+                                    <div class="product-hero-choose-color">
+                                        <input type="radio" name="color_chhose" id="red" hidden>
+                                        <label for="red" class="product-hero-color-select product-hero-red-select h-28 w-28 br-40 text-white fs-16 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-check"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between product-hero-data-main mt-25">
+                            <div class="w-full d-flex align-items-center h-59 pl-10 d-flex align-items-center gap-12">
+                                <div class="product-hero-bought-title fw-medium fs-15">
+                                    2.5k Customer bought this in past month
+                                </div>
+                                <div>
+                                    <img src="assets/img/cart-color.svg" alt="cart" height="22" width="22">
+                                </div>
+                                <div>
+                                    <img src="assets/img/whishlist-color.svg" alt="wishlist"  height="21" width="21">
+                                </div>
+                            </div>
+                            <div class="product-hero-btn-main position-relative">
+                                <a href="cart.html" class="common-btn-2 text-decoration-none fw-medium border-0 text-nowrap fs-13 pr-7 py-7 position-relative overh d-flex br-50 align-items-center pl-20 gap-20">
+                                    Buy Now
+                                    <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product hero section end -->
+
+    <!-- product detail section start -->
+    <div class="product-detail-section position-relative">
+        <div class="container">
+            <div class="row justify-content-center scroll-section">
+                <div class="col-auto">
+                    <div class="d-flex">
+                        <a href="" class="bg-theme1 px-90 py-10 text-white fs-20 scroll-link "><i class="fa-solid fa-angles-up"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-60 gx-xl-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="main-heading text-theme1 fw-medium fs-35 ">
+                                Product Detail:
+                            </div>
+                        </div>
+                        <div class="col-md-11 ms-auto mt-35">
+                            <div class="d-flex flex-column gap-15">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Material type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Material typeCotton
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Length
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        LengthAbove the Knee
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Sleeve type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Sleeve typeLong Sleeve
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Pattern
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        PatternSolid
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Style
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        StyleShirt
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Neck style
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Neck styleCollared Neck
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Country of Origin
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Country of OriginIndia
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Fabric Composition, Wash Care
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        100% Cotton,Machine Wash
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Fit Type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        A-Line
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Pattern Type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Self Design
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Neck Type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Spread Collar
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16">
+                                        <span class="text-theme1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                        <div class="text-black-50">
+                                            Sleeve Type
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8 fs-xl-18 fs-16 fw-medium">
+                                        <span>:</span>
+                                        Long Sleeves
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-40">
+                            <div class="main-heading text-theme1 fw-medium fs-35 ">
+                                Product Description:
+                            </div>
+                        </div>
+                        <div class="col-md-11 ms-auto mt-30">
+                            <div class="fs-xl-18 fs-16 fw-medium proudct-detail-text">
+                                <p class="fs-xl-18 fs-16 fw-medium lh-33">Crafted with sophistication in mind, this dress boasts full sleeves and a collar neckline, offering timeless charm with a contemporary twist. Adorned with delicate front buttons and a waist belt, it accentuates your silhouette gracefully. Designed to fall above the knees, it captures the essence of modern femininity. Elevate your wardrobe with this epitome of refinement and style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-detail-card p-50 position-relative br-20 overflow-hidden">
+                        <div class="product-detail-card-title pb-30 text-center fs-32 text-white fw-medium">We Are Comited To</div>
+                        <div class="row mt-10 g-4">
+                            <div class="col-md-3">
+                                <div class="product-cta-card pr-24">
+                                    <div class="product-cta-card-img d-flex align-items-center justify-content-center h-62 br-8">
+                                        <img src="assets/img/fast-shippment.png" alt="fast shippment" class="h-24">
+                                    </div>
+                                    <div class="product-cta-card-title text-center mt-15 fw-medium">Fast Shipment</div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-cta-card pr-24">
+                                    <div class="product-cta-card-img d-flex align-items-center justify-content-center h-62 br-8">
+                                        <img src="assets/img/secure-payment.png" alt="Secure Payment" class="h-24">
+                                    </div>
+                                    <div class="product-cta-card-title text-center mt-15 fw-medium text-nowrap">Secure Paymentt</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-cta-card pr-24">
+                                    <div class="product-cta-card-img d-flex align-items-center justify-content-center h-62 br-8">
+                                        <img src="assets/img/support.png" alt="24/7 Support" class="h-24">
+                                    </div>
+                                    <div class="product-cta-card-title text-center mt-15 fw-medium">24/7 Support</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-cta-card border-0">
+                                    <div class="product-cta-card-img d-flex align-items-center justify-content-center h-62 br-8">
+                                        <img src="assets/img/easy-return.png" alt="Easy Return" class="h-24">
+                                    </div>
+                                    <div class="product-cta-card-title text-center mt-15 fw-medium">Easy Return</div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="product-detail-card product-detail-offer-main px-50 pt-50 pb-40 mt-60 position-relative br-20 overflow-hidden">
+                        <div class="product-detail-card-title pb-25 text-center fs-32 text-white fw-medium border-0">Offer At Checkout</div>
+                        <div class="swiper mySwiper product_detail_offer">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Cashback
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Upto ₹106.99 EMI interest savings on Amazon Pay ICICI Bank</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Partner Offer
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Get GST  invoice and save up to 28% on business purchase…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Cashback
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Upto ₹106.99 EMI interest savings on Amazon Pay ICICI Bank</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Partner Offer
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Get GST  invoice and save up to 28% on business purchase…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Cashback
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Upto ₹106.99 EMI interest savings on Amazon Pay ICICI Bank</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-detail-offer-card p-20 bg-white br-8 position-relative">
+                                        <div class="product-detail-offer-title fw-medium fs-22 text-theme1">
+                                            Partner Offer
+                                        </div>
+                                        <div class="product-detail-offer-para mt-10">
+                                            <p class="fs-17 mb-0 lh-28 fw-medium">Get GST  invoice and save up to 28% on business purchase…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-25 mt-25">
+                                <div class="swiper-offer-prev product-offer-slider-btn border border-4 border-white br-5 px-14 py-7 text-white">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>  
+                                <div class="swiper-offer-next product-offer-slider-btn border border-4 border-white br-5 px-14 py-7 text-white">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product detail section end -->
+
+    <!-- product review section start -->
+    <section class="product-review-section pt-55 position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="main-heading text-theme1 fw-medium fs-35 ">
+                        Ratings & Reviews:
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="fw-medium fs-18 product-review-total py-14 px-20 text-end text-white">
+                        <span>242 Buyers Rated</span> | <span>242 Buyers Rated</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-review-inner mt-55 overflow-y-auto overflow-x-hidden">
+                <div class="row gap-43">
+                    <div class="col-12">
+                        <div class="product-review-card">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-15">
+                                    <div class="product-review-title fw-medium rounded-end-5 px-20 py-11 fw-medium bg-theme1 text-white">5 Days Ago</div>
+                                    <div class="text-truncate product-review-title fw-bold fs-22">
+                                        Product was gud, colour is same product,shuit is very nive...
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-6">
+                                    <div class="fs-22 text-black fw-medium">4.2 | </div>
+                                    <ul class="list-unstyled d-flex p-0 m-0 d-flex align-items-center gap-5">
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-review-card-para mt-15">
+                                <p>Crafted with sophistication in mind, this dress boasts full sleeves and a collar neckline, offering timeless charm with a contemporary twist. Adorned with delicate front buttons and a waist belt, it accentuates your silhouette gracefully. Designed to fall above the knees, it captures the essence of modern femininity. Elevate your wardrobe with this epitome of refinement and style.</p>
+                            </div>
+                            <div class="like-dislike-container d-flex align-items-center gap-23 mt-22">
+                                <!-- Like Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="like-button">
+                                    <i class="fa-solid fa-thumbs-up fs-23"></i>
+                                    <span id="like-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                                <span class="like-dislike-divide">|</span>
+                        
+                                <!-- Dislike Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="dislike-button">
+                                    <i class="fa-solid fa-thumbs-down fs-23"></i>
+                                    <span id="dislike-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product-review-card">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-15">
+                                    <div class="product-review-title fw-medium rounded-end-5 px-20 py-11 fw-medium bg-theme1 text-white">5 Days Ago</div>
+                                    <div class="text-truncate product-review-title fw-bold fs-22">
+                                        Product was gud, colour is same product,shuit is very nive...
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-6">
+                                    <div class="fs-22 text-black fw-medium">4.2 | </div>
+                                    <ul class="list-unstyled d-flex p-0 m-0 d-flex align-items-center gap-5">
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-review-card-para mt-15">
+                                <p>Crafted with sophistication in mind, this dress boasts full sleeves and a collar neckline, offering timeless charm with a contemporary twist. Adorned with delicate front buttons and a waist belt, it accentuates your silhouette gracefully. Designed to fall above the knees, it captures the essence of modern femininity. Elevate your wardrobe with this epitome of refinement and style.</p>
+                            </div>
+                            <div class="like-dislike-container d-flex align-items-center gap-23 mt-22">
+                                <!-- Like Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="like-button">
+                                    <i class="fa-solid fa-thumbs-up fs-23"></i>
+                                    <span id="like-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                                <span class="like-dislike-divide">|</span>
+                        
+                                <!-- Dislike Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="dislike-button">
+                                    <i class="fa-solid fa-thumbs-down fs-23"></i>
+                                    <span id="dislike-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product-review-card">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-15">
+                                    <div class="product-review-title fw-medium rounded-end-5 px-20 py-11 fw-medium bg-theme1 text-white">5 Days Ago</div>
+                                    <div class="text-truncate product-review-title fw-bold fs-22">
+                                        Product was gud, colour is same product,shuit is very nive...
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-6">
+                                    <div class="fs-22 text-black fw-medium">4.2 | </div>
+                                    <ul class="list-unstyled d-flex p-0 m-0 d-flex align-items-center gap-5">
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-review-card-para mt-15">
+                                <p>Crafted with sophistication in mind, this dress boasts full sleeves and a collar neckline, offering timeless charm with a contemporary twist. Adorned with delicate front buttons and a waist belt, it accentuates your silhouette gracefully. Designed to fall above the knees, it captures the essence of modern femininity. Elevate your wardrobe with this epitome of refinement and style.</p>
+                            </div>
+                            <div class="like-dislike-container d-flex align-items-center gap-23 mt-22">
+                                <!-- Like Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="like-button">
+                                    <i class="fa-solid fa-thumbs-up fs-23"></i>
+                                    <span id="like-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                                <span class="like-dislike-divide">|</span>
+                        
+                                <!-- Dislike Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="dislike-button">
+                                    <i class="fa-solid fa-thumbs-down fs-23"></i>
+                                    <span id="dislike-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product-review-card">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-15">
+                                    <div class="product-review-title fw-medium rounded-end-5 px-20 py-11 fw-medium bg-theme1 text-white">5 Days Ago</div>
+                                    <div class="text-truncate product-review-title fw-bold fs-22">
+                                        Product was gud, colour is same product,shuit is very nive...
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-6">
+                                    <div class="fs-22 text-black fw-medium">4.2 | </div>
+                                    <ul class="list-unstyled d-flex p-0 m-0 d-flex align-items-center gap-5">
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star"></i></li>
+                                        <li class="text-[#F2A801] fs-22"><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-review-card-para mt-15">
+                                <p>Crafted with sophistication in mind, this dress boasts full sleeves and a collar neckline, offering timeless charm with a contemporary twist. Adorned with delicate front buttons and a waist belt, it accentuates your silhouette gracefully. Designed to fall above the knees, it captures the essence of modern femininity. Elevate your wardrobe with this epitome of refinement and style.</p>
+                            </div>
+                            <div class="like-dislike-container d-flex align-items-center gap-23 mt-22">
+                                <!-- Like Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="like-button">
+                                    <i class="fa-solid fa-thumbs-up fs-23"></i>
+                                    <span id="like-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                                <span class="like-dislike-divide">|</span>
+                        
+                                <!-- Dislike Button -->
+                                <div class="button product-review-btn d-flex align-items-center gap-12" id="dislike-button">
+                                    <i class="fa-solid fa-thumbs-down fs-23"></i>
+                                    <span id="dislike-count" class="fw-medium text-black lh-16 fs-17">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product review section end -->
+
+    <!-- sale section start -->
+    <section class="sale-section mt-80 h-340 position-relative">
+        <div class="container h-full">
+            <div class="row h-full align-items-end pb-30">
+                <div class="col-lg-7">
+                    <div class="text-center">
+                        <div class="fs-50 fw-bolder text-white">UPTO 60% OFF</div>
+                        <div class="d-flex justify-content-center mt-10">
+                            <a href="" class="common-btn-2 text-decoration-none fw-medium fs-25 pr-7 py-7 d-flex br-50 align-items-center pl-35 gap-35">
+                                Grand Festival Sale
+                                <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sale section end -->
+
+    <!-- offer section start -->
+    <section class="offer-section mt-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="offer-card overflow-hidden br-15 position-relative">
+                        <div class="offer-product-img pb-30 pr-15 pt-15 d-flex align-items-center justify-content-center h-240">
+                            <img src="assets/img/home-offer-1.png" alt="offer" class="w-full object-fit-contain">
+                        </div>
+                        <div class="bg-[#383355] pb-20 px-20">
+                            <div class="d-flex align-items-center justify-content-end offer-card-arrow-main">
+                                <a href="" class="offer-card-arrow stretched-link d-flex text-decoration-none align-items-center justify-content-center h-50 w-50 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <div class="offer-card-title text-[#00FF2A] mb-10 pb-10">
+                                Minimum 55% off
+                            </div>
+                            <div class="text-white">
+                                Mobile And Electronics
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="offer-card overflow-hidden br-15 position-relative">
+                        <div class="offer-product-img pb30 px-15 pt-15 d-flex align-items-center justify-content-center h-240">
+                            <img src="assets/img/home-offer-2.png" alt="offer" class="w-full h-full object-fit-contain">
+                        </div>
+                        <div class="bg-[#383355] pb-20 px-20">
+                            <div class="d-flex align-items-center justify-content-end offer-card-arrow-main">
+                                <a href="" class="offer-card-arrow stretched-link d-flex text-decoration-none align-items-center justify-content-center h-50 w-50 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <div class="offer-card-title text-[#00FF2A] mb-10 pb-10">
+                                Minimum 55% off
+                            </div>
+                            <div class="text-white">
+                                Fashion
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="offer-card overflow-hidden br-15 position-relative">
+                        <div class="offer-product-img pb-30 px-15 pt-15 d-flex align-items-center justify-content-center h-240">
+                            <img src="assets/img/home-offer-3.png" alt="offer" class="w-full h-full object-fit-contain">
+                        </div>
+                        <div class="bg-[#383355] pb-20 px-20">
+                            <div class="d-flex align-items-center justify-content-end offer-card-arrow-main">
+                                <a href="" class="offer-card-arrow stretched-link d-flex text-decoration-none align-items-center justify-content-center h-50 w-50 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <div class="offer-card-title text-[#00FF2A] mb-10 pb-10">
+                                Minimum 55% off
+                            </div>
+                            <div class="text-white">
+                                Earphone And Headset
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="offer-card overflow-hidden br-15 position-relative">
+                        <div class="offer-product-img d-flex align-items-center justify-content-center h-240">
+                            <img src="assets/img/home-offer-4.png" alt="offer" class="w-full h-full object-fit-contain">
+                        </div>
+                        <div class="bg-[#383355] pb-20 px-20">
+                            <div class="d-flex align-items-center justify-content-end offer-card-arrow-main">
+                                <a href="" class="offer-card-arrow stretched-link d-flex text-decoration-none align-items-center justify-content-center h-50 w-50 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <div class="offer-card-title text-[#00FF2A] mb-10 pb-10">
+                                Minimum 55% off
+                            </div>
+                            <div class="text-white">
+                                Goggles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer section end -->
+     
+    <!-- shop main section start -->
+    <section class="shop-main-section mt-50">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="main-heading text-theme1 fw-medium fs-35 ">
+                        Limited Time Deals
+                    </div>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <p class="fs-18 mt-10 lh-29 mb-0">Grab exclusive offers on top products at unbeatable prices. Hurry, these limited-time deals are available for a short period only. Don’t miss out!</p>
+                </div>
+            </div>
+            <div class="row shop-main-inner mt-10 g-4">
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-card">
+                        <div class="shop-card-top h-400 overflow-hidden br-20 position-relative ">
+                            <div class="h-full">
+                                <img src="assets/img/card-2.png" alt="limited time offer" class="w-full h-full object-fit-cover">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="shop-card-time position-relative bg-theme1 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    <span class="text-[#F9E4C9]">Sales Ends:</span>
+                                    <span class="text-white">06:34:52</span>
+                                </div>
+                            </div>
+                            <div class="position-absolute left-20 bottom-20">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center gap-7">
+                                            <div class="fw-medium fs-18 mt-2">4.2</div>
+                                            <div class="fw-medium fs-18 mt-2">|</div>
+                                            <div class="limited-time-star h-27">
+                                                <img src="assets/img/review-star.svg" alt="review star" class="h-full">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-15">
+                                        <div class="d-flex gap-10">
+                                            <a href="product-detail.html" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    ADD TO CARD
+                                                    <img src="assets/img/cart-check-icon.svg" alt="cart" height="23">
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn p-13 br-5 position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-15 position-relative z-1">
+                                                    <img src="assets/img/wishlist.svg" alt="wishlist" height="23">
+                                                </span>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card-body p-20">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="shopcard-product-name fs-20 fw-medium">Kitchen Utensils</div>
+                                <div class="shopcard-product-name fs-20 fw-medium text-theme1">Off -47%</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-12">
+                                <div class="shopcard-product-name fs-16 fw-medium ">
+                                    <span class="text-black-50">MRP:</span>
+                                    <del>₹2,999.00 /-</del>
+                                </div>
+                                <div class="shopcard-product-name fs-20 fw-medium">868.00 /-</div>
+                            </div>
+                        </div>
+                        <div class="shop-card-footer d-flex">
+                            <a href="product-detail.html" class="common-btn py-13 px-25 w-full br-5 position-relative overflow-hidden fs-14 text-decoration-none ">
+                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                    Buy Now 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shop main section end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section py-100">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="subscribe-heading fw-bold fs-40 text-white">
+                        Subscribe Our Newsletter
+                    </div>
+                </div>
+                <div class="col-12 my-15">
+                    <p class="text-white fs-18">Subscribe And Get Latest Updates From Us To Your Email</p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <form action="">
+                        <div class="d-flex bg-white rounded-5 align-items-center">
+                            <div class="w-full h-full d-flex align-items-center px-15 gap-10 ">
+                                <span><i class="fa-regular fa-envelope-open"></i></span>
+                                <input type="text" class="form-control rounded-0 h-full bg-transparent border-0 p-0 shadow-none fs-15" placeholder="Enter Your email">
+                            </div>
+                            <button class="common-btn-2 text-decoration-none fw-bold border-0 fs-18 pr-7 py-7 d-flex br-50 align-items-center pl-35 gap-35">
+                                Subscribe
+                                <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+    <footer class="footer bg-[#261010]">
+        <div class="container">
+            <div class="row g-4 py-55">
+                <div class="col-md-3">
+                    <div class="footer-logo h-40">
+                        <img src="assets/img/logo.png" alt="logo" class="h-full">
+                    </div>
+                    <p class="text-[#F4F7FF] lh-32 mt-25 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="fw-medium fs-20 text-white mt-30">Follow Us</div>
+                    <ul class="mb-0 mt-15 p-0 d-flex align-items-center gap-18">
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu d-flex flex-column align-items-center">
+                        <div>
+                            <div class="fw-medium footer-heading fs-20 text-white">Useful Links</div>
+                            <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Refund & Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Complaint</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Quick Links</div>
+                        <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">About The Company</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Customer Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Affiliate Marketing</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Seller Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Contact Info</div>
+                        <ul class="mb-0 mt-12 p-0 d-flex flex-column gap-15">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-solid fa-phone"></i></span>+91 9876543210</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-regular fa-envelope-open"></i></span>info@website.com</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex gap-8 lh-28"><span class="fs-17 mt-1"><i class="fa-solid fa-location-dot"></i></span>#78/B, Cabin No: 02, Lajpat Nagar, New Delhi, India, 891205</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section py-30 d-flex align-items-center justify-content-between">
+                <div class="text-[#b3b2bb] fs-14">
+                    Copyright © 2022 Redhat Safety. All Rights Reserved
+                </div>
+                <div class="d-flex align-items-center gap-30">
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Privacy Policy</a>
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    
+    <!-- js files  -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/color.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- navbar js -->
+    <script>
+        var swiper = new Swiper(".nav-category-slider", {
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 7,
+                spaceBetween: 15,
+                },
+                1024: {
+                slidesPerView: 9,
+                spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- hero slider js -->
+    <script>
+        var swiper = new Swiper(".hero-slider-2", {
+            effect: "cards",
+            //     grabCursor: true,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".hero-slider", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".hero-swiper-pagination",
+                clickable: true,
+                direction: "vertical",
+            },
+            navigation: {
+                nextEl: ".hero-swiper-next",
+                prevEl: ".hero-swiper-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+    <!-- product detail -->
+    <script>
+        var swiper = new Swiper(".product_hero_sidebar", {
+          loop: true,
+          spaceBetween: 0,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+          direction: "vetical"
+        });
+        var swiper2 = new Swiper(".product_hero", {
+          loop: true,
+          spaceBetween: 10,
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+    </script>
+
+    <!-- product detail offer card slider -->
+    <script>
+        var swiper = new Swiper(".product_detail_offer", {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-offer-next",
+                prevEl: ".swiper-offer-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView:2,
+                },
+            },
+        });
+    </script>
+
+    <!-- like and dislike button js -->
+    <script>
+        let likeCount = 0;
+        let dislikeCount = 0;
+
+        // Get elements
+        const likeButton = document.getElementById('like-button');
+        const dislikeButton = document.getElementById('dislike-button');
+        const likeCountSpan = document.getElementById('like-count');
+        const dislikeCountSpan = document.getElementById('dislike-count');
+
+        // Add event listeners
+        likeButton.addEventListener('click', () => {
+            // Toggle like button
+            if (!likeButton.classList.contains('active')) {
+                likeCount++;
+                likeButton.classList.add('active');
+                // Remove dislike if active
+                if (dislikeButton.classList.contains('active')) {
+                    dislikeCount--;
+                    dislikeButton.classList.remove('active');
+                }
+            } else {
+                likeCount--;
+                likeButton.classList.remove('active');
+            }
+            updateCounts();
+        });
+
+        dislikeButton.addEventListener('click', () => {
+            // Toggle dislike button
+            if (!dislikeButton.classList.contains('active')) {
+                dislikeCount++;
+                dislikeButton.classList.add('active');
+                // Remove like if active
+                if (likeButton.classList.contains('active')) {
+                    likeCount--;
+                    likeButton.classList.remove('active');
+                }
+            } else {
+                dislikeCount--;
+                dislikeButton.classList.remove('active');
+            }
+            updateCounts();
+        });
+
+        // Function to update counts
+        function updateCounts() {
+            likeCountSpan.textContent = likeCount;
+            dislikeCountSpan.textContent = dislikeCount;
+        }
+
+    </script>
+                                          
+</body>
+</html>

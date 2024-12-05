@@ -1,4 +1,4 @@
-// Custom width and height classes from 1px to 1000px
+// Custom width and height classes from 1px to 500px
 @for $i from 1 through 500 {
   .w-#{$i} {
     width: #{$i}px !important;

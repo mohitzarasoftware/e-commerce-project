@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section start -->
+    <nav class="main-navbar">
+        <div class="top-bar w-full py-3">
+            <div class="container w-full">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-25">
+                            <div class="topbar-social-title fw-medium text-white">
+                                Don’t forgot to follow us:
+                            </div>
+                            <ul class="list-unstyled d-flex mb-0 align-items-center">
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="topbar-social-title fw-medium text-white">
+                            Customer Support Team: +91-98765-43210
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-center py-12">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="index.html" class="d-flex align-items-center justify-content-center h-41">
+                            <img src="assets/img/logo.png" alt="navbar logo" class="h-full w-full img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="nav-search-main h-45 d-flex br-5 overflow-hidden">
+                            <div class="nav-search-iput-main bg-white w-full d-flex align-items-center px-13">
+                                <span class="nav-search-icon text-[#5C5C5C] fs-15 d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="h-full form-control shadow-none border-0 fs-14 text-[##5D5D5D]" placeholder="Search products">
+                            </div>
+                            <div class="h-full">
+                                <button class="border-0 nav-search-btn bg-btn-theme1 text-white d-block h-full px-20">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-30">
+                            <div class="d-flex align-items-center gap-25">
+                                <div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="w-24 h-15 d-flex align-items-center justify-content-center"><img src="assets/img/india-flag.svg" alt="india flag" class="h-full w-full img-fluid" width="25" height="16"></span>
+                                        <i class="fa-solid fa-chevron-down text-white fs-13"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        English
+                                    </div>
+                                </div>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Account
+                                    </div>
+                                </a>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Favourites 
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="nav-cart-btn bg-btn-theme1 d-flex py-10 px-11 br-8 text-decoration-none align-items-center gap-11">
+                                    <span class="d-inline-flex align-items-center nav-btn-icon position-relative justify-content-center h-27">
+                                        <img src="assets/img/cart-icon.svg" alt="cart" class="h-full w-full">
+                                        <span class="text-theme1 h-17 nav-cart-btn-count top-n5 right-n5 w-17 fs-12 rounded-circle d-flex align-items-center justify-content-center bg-white fw-medium position-absolute">
+                                            3
+                                        </span>
+                                    </span>
+                                    <span class="text-[#fff] fs-14 fw-medium">$225</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end --> 
+    
+    <!-- category section start -->
+    <section class="category-section position-relative bg-[#E4DFFF] py-7">
+        <div class="container">
+            <div class="swiper nav-category-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/electric-icon.png" alt="electric" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/kids-fashion.png" alt="kids" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Kids Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/men-category.png" alt="men" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Men Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/women-category.png" alt="women" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Women Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/grocery.png" alt="grocery" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Grocery</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/personal-care.png" alt="personal care" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Personal Care</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/toys-gifts.png" alt="toys gifts" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Toys & Gifts</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/home-decoration.png" alt="home decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Home Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/office-decoration.png" alt="office decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Office Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/appliances.png" alt="Appliances" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Appliances</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/mobile.png" alt="mobile" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Mobile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-next h-full bg-white position-absolute d-flex align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 end-0"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="swiper-prev h-full bg-white position-absolute d-flex align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 start-0"><i class="fa-solid fa-chevron-left"></i></div>
+    </section>
+    <!-- category section end -->
+
+    <!-- cart section start -->
+    <section class="cart-section pt-60 position-relative">
+        <div class="container">
+            <div class="cart-inner position-relative">
+                <ul class="nav nav-pills mb-3 position-absolute end-0 top-0 mt-20 cart-tab gap-50" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20 d-flex align-items-center gap-12 fw-medium p-0 bg-transparent active" id="pills-cart-tab" data-bs-toggle="pill" data-bs-target="#pills-cart" type="button" role="tab" aria-controls="pills-cart" aria-selected="true">
+                            <span class="d-flex align-items-center justify-content-center cart-tab-icon rounded-circle h-45 w-45">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4753 6.19496C18.3845 6.10568 18.2575 6.06334 18.1311 6.08025H13.1981V3.90052C13.1981 1.74631 11.4518 0 9.29762 0C7.14341 0 5.39709 1.74631 5.39709 3.90052V6.08025H0.463996C0.326316 6.08025 0.188681 6.08025 0.119819 6.19496C0.0273301 6.28385 -0.0155767 6.41252 0.00510817 6.53914L1.72595 15.9463C1.96635 17.2586 3.09945 18.2188 4.43338 18.2407H14.1618C15.4995 18.2079 16.6302 17.24 16.8692 15.9234L18.59 6.53914C18.6107 6.41252 18.5678 6.28385 18.4753 6.19496ZM6.31482 3.90052C6.31482 2.2532 7.65025 0.917775 9.29757 0.917775C10.9449 0.917775 12.2803 2.2532 12.2803 3.90052V6.08025H6.31482V3.90052ZM15.9514 15.8086C15.7969 16.6782 15.0449 17.3145 14.1618 17.323H4.43338C3.55021 17.3145 2.79827 16.6783 2.64372 15.8086L1.01467 6.99802H17.5805L15.9514 15.8086Z"/>
+                                </svg>
+                            </span>
+                            CART
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20 d-flex align-items-center gap-12 fw-medium p-0 bg-transparent" id="pills-checkout-tab" data-bs-toggle="pill" data-bs-target="#pills-checkout" type="button" role="tab" aria-controls="pills-checkout" aria-selected="false">
+                            <span class="d-flex align-items-center justify-content-center cart-tab-icon rounded-circle h-45 w-45">
+                                <svg  width="25" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                </svg>
+                            </span>
+                            CHECKOUT
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20 d-flex align-items-center gap-12 fw-medium p-0 bg-transparent" id="pills-placed-tab" data-bs-toggle="pill" data-bs-target="#pills-placed" type="button" role="tab" aria-controls="pills-placed" aria-selected="false">
+                            <span class="d-flex align-items-center justify-content-center cart-tab-icon rounded-circle h-45 w-45">
+                                <svg width="25" height="19" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.425 0C4.14141 0 3.1 1.00781 3.1 2.25V4.5H0.775C0.34875 4.5 0 4.8375 0 5.25C0 5.6625 0.34875 6 0.775 6H3.1H13.175C13.6012 6 13.95 6.3375 13.95 6.75C13.95 7.1625 13.6012 7.5 13.175 7.5H3.1H2.325C1.89875 7.5 1.55 7.8375 1.55 8.25C1.55 8.6625 1.89875 9 2.325 9H3.1H11.625C12.0512 9 12.4 9.3375 12.4 9.75C12.4 10.1625 12.0512 10.5 11.625 10.5H3.1H0.775C0.34875 10.5 0 10.8375 0 11.25C0 11.6625 0.34875 12 0.775 12H3.1H10.075C10.5012 12 10.85 12.3375 10.85 12.75C10.85 13.1625 10.5012 13.5 10.075 13.5H3.1V19.5C3.1 21.9844 5.18281 24 7.75 24C10.3172 24 12.4 21.9844 12.4 19.5H18.6C18.6 21.9844 20.6828 24 23.25 24C25.8172 24 27.9 21.9844 27.9 19.5H29.45C30.3073 19.5 31 18.8297 31 18C31 17.1703 30.3073 16.5 29.45 16.5V13.5V12V11.1234C29.45 10.3266 29.1255 9.5625 28.5442 9L24.8 5.37656C24.2188 4.81406 23.4292 4.5 22.6058 4.5H20.15V2.25C20.15 1.00781 19.1086 0 17.825 0H5.425ZM26.35 11.1234V12H20.15V7.5H22.6058L26.35 11.1234ZM7.75 17.25C8.36663 17.25 8.958 17.4871 9.39402 17.909C9.83005 18.331 10.075 18.9033 10.075 19.5C10.075 20.0967 9.83005 20.669 9.39402 21.091C8.958 21.5129 8.36663 21.75 7.75 21.75C7.13337 21.75 6.542 21.5129 6.10598 21.091C5.66995 20.669 5.425 20.0967 5.425 19.5C5.425 18.9033 5.66995 18.331 6.10598 17.909C6.542 17.4871 7.13337 17.25 7.75 17.25ZM20.925 19.5C20.925 18.9033 21.17 18.331 21.606 17.909C22.042 17.4871 22.6334 17.25 23.25 17.25C23.8666 17.25 24.458 17.4871 24.894 17.909C25.33 18.331 25.575 18.9033 25.575 19.5C25.575 20.0967 25.33 20.669 24.894 21.091C24.458 21.5129 23.8666 21.75 23.25 21.75C22.6334 21.75 22.042 21.5129 21.606 21.091C21.17 20.669 20.925 20.0967 20.925 19.5Z"/>
+                                </svg>
+                            </span>
+                            PLACED
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-cart" role="tabpanel" aria-labelledby="pills-cart-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="fw-bolder fs-45 text-theme1 cart-section-heading position-relative pb-10 d-inline-flex">
+                                    BEST DEALS ONLY FOR YOU
+                                </div>
+                            </div>
+                            <div class="col-12 mt-30">
+                                <div class="cart-section-title fs-30 fw-medium text-theme1">
+                                    Move on to checkout
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-50 justify-content-between">
+                            <div class="col-md-6">
+                                <div class="cart-product-list d-flex gap-30 flex-column">
+                                    <div class="cart-product-card row">
+                                        <div class="col-auto">
+                                            <div class="cart-product-img h-110 w-130 overflow-hidden br-10">
+                                                <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                            </div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <div class="d-flex align-items-center justify-content-between border-bottom pb-10 mb-15">
+                                                <div class="cart-product-card-title fw-medium fs-xl-18 fs-16">
+                                                    This is the detailed product title with some short description
+                                                </div>
+                                                <button class="text-theme1 bg-transparent p-0 border-0 fs-26"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-20">
+                                                    <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                        <button class="btn border-0 text-white minus-btn" id="minus-btn">−</button>
+                                                        <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                        <button class="btn border-0 text-white plus-btn" id="plus-btn">+</button>
+                                                    </div>
+                                                    <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                        X <span>249.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="fw-medium fs-22 text-theme1">
+                                                    498.00 /-
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product-card row">
+                                        <div class="col-auto">
+                                            <div class="cart-product-img h-110 w-130 overflow-hidden br-10">
+                                                <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                            </div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <div class="d-flex align-items-center justify-content-between border-bottom pb-10 mb-15">
+                                                <div class="cart-product-card-title fw-medium fs-xl-18 fs-16">
+                                                    This is the detailed product title with some short description
+                                                </div>
+                                                <button class="text-theme1 bg-transparent p-0 border-0 fs-26"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-20">
+                                                    <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                        <button class="btn border-0 text-white minus-btn" id="minus-btn">−</button>
+                                                        <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                        <button class="btn border-0 text-white plus-btn" id="plus-btn">+</button>
+                                                    </div>
+                                                    <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                        X <span>249.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="fw-medium fs-22 text-theme1">
+                                                    498.00 /-
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product-card row">
+                                        <div class="col-auto">
+                                            <div class="cart-product-img h-110 w-130 overflow-hidden br-10">
+                                                <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                            </div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <div class="d-flex align-items-center justify-content-between border-bottom pb-10 mb-15">
+                                                <div class="cart-product-card-title fw-medium fs-xl-18 fs-16">
+                                                    This is the detailed product title with some short description
+                                                </div>
+                                                <button class="text-theme1 bg-transparent p-0 border-0 fs-26"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-20">
+                                                    <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                        <button class="btn border-0 text-white minus-btn" id="minus-btn">−</button>
+                                                        <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                        <button class="btn border-0 text-white plus-btn" id="plus-btn">+</button>
+                                                    </div>
+                                                    <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                        X <span>249.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="fw-medium fs-22 text-theme1">
+                                                    498.00 /-
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="order-summary-card br-14 p-40 bg-[#FFF4F4]">
+                                    <div class="fs-24 text-center fw-medium text-theme1">
+                                        ORDER SUMMARY
+                                    </div>
+                                    <div class="mt-50 d-flex flex-column gap-13">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Total:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                1,494.00 /-
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Coupon Applied:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                50.00 /-
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Coupon Applied:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                50.00 /-
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <div class="order-coupan-input-main d-flex br-8 mt-40 overflow-hidden bg-white h-45 border">
+                                            <input type="text" class="fs-14 fw-medium text-[#5D5D5D] border-0 rounded-0 bg-transparent form-control shadow-none" placeholder="Enter Coupon Code">
+                                            <button class="common-btn-3 fs-14 border-0 fw-medium px-30">APPLY</button>
+                                        </div>
+                                    </form>
+                                    <div class="order-price-main border-top border-black pt-20 mt-35 d-flex align-items-center justify-content-between">
+                                        <div class="fs-18 fw-medium text-[#00BE16]">
+                                            Total:
+                                        </div>
+                                        <div class="fs-21 fw-medium text-[#00BE16]">
+                                            1,494.00 /-
+                                        </div>
+                                    </div>
+                                    <div class="d-flex w-full gap-20 mt-40">
+                                        <a href="" class="common-btn py-12 d-flex w-full px-20 br-5 position-relative overflow-hidden justify-content-center fs-13 text-decoration-none ">
+                                            <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                <i class="fa-solid fa-angles-left"></i>
+                                                CONTINUE SHOPPING
+                                            </span>
+                                        </a>
+                                        <a href="" class="common-btn common-btn-green py-12 d-flex w-full px-20 br-5 position-relative overflow-hidden justify-content-center fs-13 text-decoration-none   id="pills-checkout-tab" data-bs-toggle="pill" data-bs-target="#pills-checkout" type="button" role="tab" aria-controls="pills-checkout" aria-selected="false"">
+                                            <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                PROCEED TO CHECKOUT
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fw-medium mt-20">Need Help? Check Our <a href="" class="text-theme1 text-decoration-none">Help & Support</a> or <a href="" class="text-theme1 text-decoration-none">Contact Us</a></div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-checkout" role="tabpanel" aria-labelledby="pills-checkout-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="fw-bolder fs-45 text-theme1 cart-section-heading position-relative pb-10 d-inline-flex">
+                                    Checkout & Get It Delivered 
+                                </div>
+                            </div>
+                            <div class="col-12 mt-30">
+                                <div class="cart-section-title fs-30 fw-medium text-theme1">
+                                    This is ready for you...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-50 justify-content-between gx-0 align-items-center">
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="chechout-card p-40 br-20 position-relative">
+                                        <div class="fs-22 text-white">
+                                            Enter Shipping Informatin:
+                                        </div>
+                                        <div class="row g-3 mt-20">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="text" placeholder="Receiver Full Name" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="email" placeholder="Enter Email Address" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="text" placeholder="Mobile Number" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="text" placeholder="Alternate Mobile Number" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="text" placeholder="Complete Address" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <input type="text" placeholder="Landmark" class="form-control h-45 fs-14 shadow-none">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-40 mb-30 fs-22 text-white">Select Payment Method:</div>
+                                        <ul class="nav nav-tabs payment-tab flex-nowrap br-8 bg-white border-0 align-items-center" id="myTab" role="tablist">
+                                            <li class="nav-item px-10 w-full border-end border-black d-flex align-items-center justify-content-center h-auto" role="presentation">
+                                              <button class="nav-link position-relative w-full d-flex justify-content-center align-items-center py-10 border-0 br-7 active" id="upi-tab" data-bs-toggle="tab" data-bs-target="#upi-tab-pane" type="button" role="tab" aria-controls="upi-tab-pane" aria-selected="true">
+                                                <img src="assets/img/g-pay.png" alt="upi" height="23" width="50">
+                                              </button>
+                                            </li>
+                                            <li class="nav-item px-10 w-full border-end border-black d-flex align-items-center justify-content-center h-auto" role="presentation">
+                                              <button class="nav-link position-relative w-full d-flex justify-content-center align-items-center py-10 br-7 border-0" id="card-tab" data-bs-toggle="tab" data-bs-target="#card-tab-pane" type="button" role="tab" aria-controls="card-tab-pane" aria-selected="false">
+                                                <img src="assets/img/credit-card.png" alt="credit card" height="23" width="30">
+                                              </button>
+                                            </li>
+                                            <li class="nav-item p-10 w-full d-flex align-items-center justify-content-center h-auto" role="presentation">
+                                              <button class="nav-link position-relative w-full d-flex justify-content-center align-items-center py-10 br-7 border-0" id="cod-tab" data-bs-toggle="tab" data-bs-target="#cod-tab-pane" type="button" role="tab" aria-controls="cod-tab-pane" aria-selected="false">
+                                                <img src="assets/img/cod.png" alt="cod" height="23" width="55">
+                                              </button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content mt-60" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="upi-tab-pane" role="tabpanel" aria-labelledby="upi-tab" tabindex="0">
+                                                <form action="">
+                                                    <div class="order-coupan-input-main d-flex br-8 overflow-hidden bg-white h-47">
+                                                        <input type="text" class="fs-14 fw-medium text-[#5D5D5D] border-0 rounded-0 bg-transparent form-control shadow-none" placeholder="Enter UPI ID">
+                                                        <button class="common-btn-3 fs-14 border-0 fw-medium px-30">APPLY</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane fade" id="card-tab-pane" role="tabpanel" aria-labelledby="card-tab" tabindex="0">
+                                                <form action="">
+                                                    <div class="order-coupan-input-main d-flex br-8 overflow-hidden bg-white h-47">
+                                                        <input type="text" class="fs-14 fw-medium text-[#5D5D5D] border-0 rounded-0 bg-transparent form-control shadow-none" placeholder="Enter UPI ID">
+                                                        <button class="common-btn-3 fs-14 border-0 fw-medium px-30">APPLY</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane fade" id="cod-tab-pane" role="tabpanel" aria-labelledby="cod-tab" tabindex="0">
+                                                <form action="">
+                                                    <div class="order-coupan-input-main d-flex br-8 overflow-hidden bg-white h-47">
+                                                        <input type="text" class="fs-14 fw-medium text-[#5D5D5D] border-0 rounded-0 bg-transparent form-control shadow-none" placeholder="Enter UPI ID">
+                                                        <button class="common-btn-3 fs-14 border-0 fw-medium px-30">APPLY</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="mt-18">
+                                            <input type="checkbox" class="accept-policy-input" id="accept_policy" hidden>
+                                            <label for="accept_policy" class="text-white accept-policy-label fs-18 d-flex align-items-center gap-6">
+                                                <span class="policy-input-box h-20 w-20 br-3 border border-3 border-white d-flex fs-12 align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                                I accept the Payment Policy, Terms & Condition.
+                                            </label>
+                                        </div>
+                                        <div class="mt-50">
+                                            <a href="" class="common-btn secure-payment-btn py-12 d-flex w-full px-20 br-5 position-relative overflow-hidden justify-content-center fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                    SECURE PAY
+                                                </span>
+                                                <i class="fa-solid fa-angles-right position-absolute right-10 top-15"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="order-summary-card br-14 p-40 bg-[#FFF4F4]">
+                                    <div class="fs-24 text-center fw-medium text-theme1">
+                                        ORDER SUMMARY
+                                    </div>
+                                    <div class="cart-product-list d-flex gap-30 mt-40 flex-column">
+                                        <div class="cart-product-card row align-items-center flex-nowrap">
+                                            <div class="col-auto">
+                                                <div class="cart-product-img h-85 w-90 overflow-hidden br-10">
+                                                    <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                                </div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <div class="d-flex align-items-center justify-content-between border-bottom pb-8 mb-12">
+                                                    <div class="cart-product-card-title text-nowrap text-truncate fw-medium fs-xl-18 fs-16">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center gap-20">
+                                                        <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                            <button class="btn border-0 text-white py-7 px-12 minus-btn" id="minus-btn">−</button>
+                                                            <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                            <button class="btn border-0 text-white py-7 px-12 plus-btn" id="plus-btn">+</button>
+                                                        </div>
+                                                        <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                            X <span>249.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fw-medium fs-22 text-theme1">
+                                                        498.00 /-
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-card row align-items-center flex-nowrap">
+                                            <div class="col-auto">
+                                                <div class="cart-product-img h-85 w-90 overflow-hidden br-10">
+                                                    <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                                </div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <div class="d-flex align-items-center justify-content-between border-bottom pb-8 mb-12">
+                                                    <div class="cart-product-card-title text-nowrap text-truncate fw-medium fs-xl-18 fs-16">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center gap-20">
+                                                        <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                            <button class="btn border-0 text-white py-7 px-12 minus-btn" id="minus-btn">−</button>
+                                                            <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                            <button class="btn border-0 text-white py-7 px-12 plus-btn" id="plus-btn">+</button>
+                                                        </div>
+                                                        <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                            X <span>249.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fw-medium fs-22 text-theme1">
+                                                        498.00 /-
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-card row align-items-center flex-nowrap">
+                                            <div class="col-auto">
+                                                <div class="cart-product-img h-85 w-90 overflow-hidden br-10">
+                                                    <img src="assets/img/product-detail-1.png" alt="product name " class="w-full h-full">
+                                                </div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <div class="d-flex align-items-center justify-content-between border-bottom pb-8 mb-12">
+                                                    <div class="cart-product-card-title text-nowrap text-truncate fw-medium fs-xl-18 fs-16">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center gap-20">
+                                                        <div class="cart-counter d-flex bg-theme1 br-40 overflow-hidden`">
+                                                            <button class="btn border-0 text-white py-7 px-12 minus-btn" id="minus-btn">−</button>
+                                                            <input type="number" id="counter" class="counter w-40 bg-transparent text-white border-top-0 border-bottom-0 text-center" value="0" readonly>
+                                                            <button class="btn border-0 text-white py-7 px-12 plus-btn" id="plus-btn">+</button>
+                                                        </div>
+                                                        <div class="fs-xl-18 fs-16 text-[#8E8E8E] fw-medium">
+                                                            X <span>249.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fw-medium fs-22 text-theme1">
+                                                        498.00 /-
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-30 d-flex flex-column gap-7 border-top border-black pt-15">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Shipping Charge:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                1,494.00 /-
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Total:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                50.00 /-
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium">
+                                                Coupon Applied:
+                                            </div>
+                                            <div class="fs-21 fw-medium">
+                                                50.00 /-
+                                            </div>
+                                        </div>
+                                        <div class="order-price-main d-flex align-items-center justify-content-between">
+                                            <div class="fs-18 fw-medium text-[#00BE16]">
+                                                Shipping Charge::
+                                            </div>
+                                            <div class="fs-21 fw-medium text-[#00BE16]">
+                                                1,494.00 /-
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-placed" role="tabpanel" aria-labelledby="pills-placed-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="fw-bolder fs-45 text-theme1 cart-section-heading position-relative pb-10 d-inline-flex">
+                                    Track Your Product Order
+                                </div>
+                            </div>
+                            <div class="col-12 mt-30">
+                                <div class="cart-section-title fs-30 fw-medium text-theme1">
+                                    We are shipping the product on time
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-50 justify-content-between gx-0 align-items-center">
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="chechout-card order-status-card p-40 br-20 position-relative">
+                                        <div class="fs-22 text-white border-bottom border-white pb-15">
+                                            Order Status
+                                        </div>
+                                        <div class="mt-30 gap-10 d-flex flex-column">
+                                            <div class="order-status-data active overflow-hidden pb-40 position-relative justify-content-between row">
+                                                <div class="col-5">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <div class="order-status-icon h-44 w-44 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <svg  width="25" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                                <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="fs-18 order-status-title">Order Received</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex gap-15">
+                                                        <div class="order-status-data-subtitle w-130 fs-18 fw-medium d-flex justify-content-between">Order ID <span>:</span> </div>
+                                                        <div class="fs-18 fw-medium text-white">
+                                                            #9872348928934
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-15">
+                                                        <div class="order-status-data-subtitle w-130 fs-18 fw-medium d-flex justify-content-between">
+                                                            Order Placed <span>: </span>
+                                                        </div>
+                                                        <div class="fs-18 fw-medium text-white">
+                                                            26 Oct, 2024 03:59:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status-data active overflow-hidden position-relative pb-40 d-flex justify-content-between row ">
+                                                <div class="col-5">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <div class="order-status-icon h-44 w-44 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <svg width="19" height="14" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M17.5 0H2.5L7 6.5H22.5L17.5 0Z"/>
+                                                                <path d="M5.5 9.5L0.5 2V11.5L5.5 18H23V9.5H5.5Z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="fs-18 order-status-title">Order Picked</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex gap-15 border-bottom pb-8 mb-15">
+                                                        <div class="order-status-data-subtitle w-130 fs-18 fw-medium d-flex justify-content-between">Date & Time <span>:</span> </div>
+                                                        <div class="fs-18 fw-medium text-white">
+                                                            26 Oct, 2024 09:30:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column gap-15">
+                                                        <div class="d-flex gap-15 order-track-location">
+                                                            <div class="order-status-data-subtitle-two w-130 fs-18 fw-medium d-flex justify-content-between">
+                                                                04:07 PM <span>: </span>
+                                                            </div>
+                                                            <div class="fs-18 fw-medium text-white">
+                                                                Product Left the facility
+                                                                Center (Jaipur, In)
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex gap-15 order-track-location">
+                                                            <div class="order-status-data-subtitle-two w-130 fs-18 fw-medium d-flex justify-content-between">
+                                                                06:12 PM <span>: </span>
+                                                            </div>
+                                                            <div class="fs-18 fw-medium text-white">
+                                                                Arrived in Delhi 
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex gap-15 order-track-location">
+                                                            <div class="order-status-data-subtitle-two w-130 fs-18 fw-medium d-flex justify-content-between">
+                                                                06:12 PM <span>: </span>
+                                                            </div>
+                                                            <div class="fs-18 fw-medium text-white">
+                                                                Arrived in Delhi 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status-data overflow-hidden position-relative d-flex justify-content-between row ">
+                                                <div class="col-5">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <div class="order-status-icon h-44 w-44 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <svg width="22" height="17" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.425 0C4.14141 0 3.1 1.00781 3.1 2.25V4.5H0.775C0.34875 4.5 0 4.8375 0 5.25C0 5.6625 0.34875 6 0.775 6H3.1H13.175C13.6012 6 13.95 6.3375 13.95 6.75C13.95 7.1625 13.6012 7.5 13.175 7.5H3.1H2.325C1.89875 7.5 1.55 7.8375 1.55 8.25C1.55 8.6625 1.89875 9 2.325 9H3.1H11.625C12.0513 9 12.4 9.3375 12.4 9.75C12.4 10.1625 12.0513 10.5 11.625 10.5H3.1H0.775C0.34875 10.5 0 10.8375 0 11.25C0 11.6625 0.34875 12 0.775 12H3.1H10.075C10.5012 12 10.85 12.3375 10.85 12.75C10.85 13.1625 10.5012 13.5 10.075 13.5H3.1V19.5C3.1 21.9844 5.18281 24 7.75 24C10.3172 24 12.4 21.9844 12.4 19.5H18.6C18.6 21.9844 20.6828 24 23.25 24C25.8172 24 27.9 21.9844 27.9 19.5H29.45C30.3073 19.5 31 18.8297 31 18C31 17.1703 30.3073 16.5 29.45 16.5V13.5V12V11.1234C29.45 10.3266 29.1255 9.5625 28.5442 9L24.8 5.37656C24.2187 4.81406 23.4292 4.5 22.6058 4.5H20.15V2.25C20.15 1.00781 19.1086 0 17.825 0H5.425ZM26.35 11.1234V12H20.15V7.5H22.6058L26.35 11.1234ZM7.75 17.25C8.36663 17.25 8.958 17.4871 9.39402 17.909C9.83005 18.331 10.075 18.9033 10.075 19.5C10.075 20.0967 9.83005 20.669 9.39402 21.091C8.958 21.5129 8.36663 21.75 7.75 21.75C7.13337 21.75 6.542 21.5129 6.10598 21.091C5.66995 20.669 5.425 20.0967 5.425 19.5C5.425 18.9033 5.66995 18.331 6.10598 17.909C6.542 17.4871 7.13337 17.25 7.75 17.25ZM20.925 19.5C20.925 18.9033 21.17 18.331 21.606 17.909C22.042 17.4871 22.6334 17.25 23.25 17.25C23.8666 17.25 24.458 17.4871 24.894 17.909C25.33 18.331 25.575 18.9033 25.575 19.5C25.575 20.0967 25.33 20.669 24.894 21.091C24.458 21.5129 23.8666 21.75 23.25 21.75C22.6334 21.75 22.042 21.5129 21.606 21.091C21.17 20.669 20.925 20.0967 20.925 19.5Z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="fs-18 order-status-title">Delivered</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="order-delivered-title fw-medium text-white fs-18">
+                                                        Be ready to receive you product. Our delivery partner is on the way.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-60 d-flex align-items-center gap-15">
+                                            <a href="" class="common-btn py-12 d-flex w-full px-20 br-5 position-relative overflow-hidden justify-content-center fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                    Contact Us
+                                                </span>
+                                            </a>
+                                            <a href="" class="common-btn py-12 d-flex w-full px-20 br-5 position-relative overflow-hidden justify-content-center fs-13 text-decoration-none ">
+                                                <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                    Keep shoping 
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="mt-30 text-center">
+                                            <a href="" class="fw-medium text-[#fff] hover:text-[#FF0004] transition text-decoration-none">Give Us A Feedback</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="track-order-card br-14 p-40 bg-[#FFF4F4]">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cart section end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section py-100">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="subscribe-heading fw-bold fs-40 text-white">
+                        Subscribe Our Newsletter
+                    </div>
+                </div>
+                <div class="col-12 my-15">
+                    <p class="text-white fs-18">Subscribe And Get Latest Updates From Us To Your Email</p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <form action="">
+                        <div class="d-flex bg-white rounded-5 align-items-center">
+                            <div class="w-full h-full d-flex align-items-center px-15 gap-10 ">
+                                <span><i class="fa-regular fa-envelope-open"></i></span>
+                                <input type="text" class="form-control rounded-0 h-full bg-transparent border-0 p-0 shadow-none fs-15" placeholder="Enter Your email">
+                            </div>
+                            <button class="common-btn-2 text-decoration-none fw-bold border-0 fs-18 pr-7 py-7 d-flex br-50 align-items-center pl-35 gap-35">
+                                Subscribe
+                                <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+    <footer class="footer bg-[#261010]">
+        <div class="container">
+            <div class="row g-4 py-55">
+                <div class="col-md-3">
+                    <div class="footer-logo h-40">
+                        <img src="assets/img/logo.png" alt="logo" class="h-full">
+                    </div>
+                    <p class="text-[#F4F7FF] lh-32 mt-25 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="fw-medium fs-20 text-white mt-30">Follow Us</div>
+                    <ul class="mb-0 mt-15 p-0 d-flex align-items-center gap-18">
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu d-flex flex-column align-items-center">
+                        <div>
+                            <div class="fw-medium footer-heading fs-20 text-white">Useful Links</div>
+                            <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Refund & Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Complaint</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Quick Links</div>
+                        <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">About The Company</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Customer Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Affiliate Marketing</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Seller Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Contact Info</div>
+                        <ul class="mb-0 mt-12 p-0 d-flex flex-column gap-15">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-solid fa-phone"></i></span>+91 9876543210</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-regular fa-envelope-open"></i></span>info@website.com</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex gap-8 lh-28"><span class="fs-17 mt-1"><i class="fa-solid fa-location-dot"></i></span>#78/B, Cabin No: 02, Lajpat Nagar, New Delhi, India, 891205</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section py-30 d-flex align-items-center justify-content-between">
+                <div class="text-[#b3b2bb] fs-14">
+                    Copyright © 2022 Redhat Safety. All Rights Reserved
+                </div>
+                <div class="d-flex align-items-center gap-30">
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Privacy Policy</a>
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    
+    <!-- js files  -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/color.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- navbar js -->
+    <script>
+        var swiper = new Swiper(".nav-category-slider", {
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 7,
+                spaceBetween: 15,
+                },
+                1024: {
+                slidesPerView: 9,
+                spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- hero slider js -->
+    <script>
+        var swiper = new Swiper(".hero-slider-2", {
+            effect: "cards",
+            //     grabCursor: true,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".hero-slider", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".hero-swiper-pagination",
+                clickable: true,
+                direction: "vertical",
+            },
+            navigation: {
+                nextEl: ".hero-swiper-next",
+                prevEl: ".hero-swiper-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+    <!-- cart counter btn js -->
+    <script>
+                // Get the DOM elements
+        const minusBtn = document.getElementById('minus-btn');
+        const plusBtn = document.getElementById('plus-btn');
+        const counterInput = document.getElementById('counter');
+
+        // Convert input value to a number
+        let counterValue = parseInt(counterInput.value);
+
+        // Handle the minus button click
+        minusBtn.addEventListener('click', () => {
+            if (counterValue > 0) { // Prevent going below 0
+                counterValue--;
+                counterInput.value = counterValue;
+            }
+        });
+
+        // Handle the plus button click
+        plusBtn.addEventListener('click', () => {
+            counterValue++;
+            counterInput.value = counterValue;
+        });
+
+    </script>
+                                          
+</body>
+</html>

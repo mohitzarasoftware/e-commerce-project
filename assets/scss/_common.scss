@@ -4,26 +4,10 @@
 body, html {
     font-family: "Inter", serif !important;
 }
-
-.h-full{
-    height: 100% !important;
-}
-.w-full {
-    width: 100% !important;
-}
-.bg-theme1 {
-    background-color: #FF0004;
-}
-.bg-btn-theme1 {
-    background-color: #FF0004;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        background-color: #b3070a;
-    }
-}
-.text-theme1 {
-    color: #FF0004;
-}
+$theme1:#FF0004;
+$theme2:#383355;
+$white:#fff;
+$black:#000;
 
 @mixin xl {
     @media (max-width:1200px){
@@ -45,3 +29,91 @@ body, html {
         @content;
     }
 }
+
+@media (min-width:1200px){
+    .container{
+        max-width: 91%;
+    }
+}
+.h-full{
+    height: 100% !important;
+}
+.w-full {
+    width: 100% !important;
+}
+.bg-theme1 {
+    background-color: #FF0004;
+}
+.bg-btn-theme1 {
+    background-color: #FF0004;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #b3070a;
+    }
+}
+.text-theme1 {
+    color: #FF0004;
+}
+.common-btn {
+    background-color: $theme1;
+    color: $white;
+    &::before {
+        content:'';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: red;
+        width: 150%;
+        height: 0%;
+        transform:  translate(-50%, -50%) rotate(-45deg);
+        transition: all 0.6s ease-in-out;
+        z-index: 1;
+    }
+    &:hover{
+       &::before {
+        height: 350%;
+        background-color: $theme2;
+       }
+    }
+    &.common-btn-green {
+        background-color: #00BE16;
+    }
+}
+.common-btn-2 {
+    background: linear-gradient(85.27deg, #927FFF 0%, #FF0000 100%);
+    color:$white ;
+    & .common-btn-arrow {
+        box-shadow: 0px 4px 4px 0px #00000040 inset;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+        height: 45px;
+        width: 45px;
+        min-width: 45px;
+    }
+    &:hover {
+        & .common-btn-arrow {
+            transform: rotate(0);
+        }
+    }
+}
+.common-btn-3 {
+    background-color: $theme1;
+    color: $white;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: darken($theme1, 10);
+    }
+}
+@include md {
+    .common-btn-2 {
+
+        & .common-btn-arrow {
+            height: 40px !important;
+            width: 40px !important;
+            min-width: 40px !important;
+        }
+
+    }
+}
+
+

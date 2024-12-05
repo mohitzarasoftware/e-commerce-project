@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section start -->
+    <nav class="main-navbar">
+        <div class="top-bar w-full py-3">
+            <div class="container w-full">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-25">
+                            <div class="topbar-social-title fw-medium text-white">
+                                Don’t forgot to follow us:
+                            </div>
+                            <ul class="list-unstyled d-flex mb-0 align-items-center">
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="topbar-social-title fw-medium text-white">
+                            Customer Support Team: +91-98765-43210
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-center py-12">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="index.html" class="d-flex align-items-center justify-content-center h-41">
+                            <img src="assets/img/logo.png" alt="navbar logo" class="h-full w-full img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="nav-search-main h-45 d-flex br-5 overflow-hidden">
+                            <div class="nav-search-iput-main bg-white w-full d-flex align-items-center px-13">
+                                <span class="nav-search-icon text-[#5C5C5C] fs-15 d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="h-full form-control shadow-none border-0 fs-14 text-[##5D5D5D]" placeholder="Search products">
+                            </div>
+                            <div class="h-full">
+                                <button class="border-0 nav-search-btn bg-btn-theme1 text-white d-block h-full px-20">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-30">
+                            <div class="d-flex align-items-center gap-25">
+                                <div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="w-24 h-15 d-flex align-items-center justify-content-center"><img src="assets/img/india-flag.svg" alt="india flag" class="h-full w-full img-fluid" width="25" height="16"></span>
+                                        <i class="fa-solid fa-chevron-down text-white fs-13"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        English
+                                    </div>
+                                </div>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Account
+                                    </div>
+                                </a>
+                                <a class="text-decoration-none">
+                                    <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="fs-13 text-white mt-3">
+                                        Favourites 
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="nav-cart-btn bg-btn-theme1 d-flex py-10 px-11 br-8 text-decoration-none align-items-center gap-11">
+                                    <span class="d-inline-flex align-items-center nav-btn-icon position-relative justify-content-center h-27">
+                                        <img src="assets/img/cart-icon.svg" alt="cart" class="h-full w-full">
+                                        <span class="text-theme1 h-17 nav-cart-btn-count top-n5 right-n5 w-17 fs-12 rounded-circle d-flex align-items-center justify-content-center bg-white fw-medium position-absolute">
+                                            3
+                                        </span>
+                                    </span>
+                                    <span class="text-[#fff] fs-14 fw-medium">$225</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end --> 
+    
+    <!-- page heading section start -->
+    <section class="page-heading-section py-70">
+        <div class="container">
+            <h1 class="fw-bolder fs-45 text-white page-heading position-relative pb-10 d-inline-flex">
+                Return And Refund Policy
+            </h1>
+            <div class="mt-10 fs-26 text-white fw-semibold">Last Updated: 26 Oct, 2024</div>
+        </div>
+    </section>
+    <!-- page heading section end -->
+
+    <!-- terms adn Conditions page start -->
+    <section class="policy-section pt-60 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="policy-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        </ol>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- terms adn Conditions page end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section py-100">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="subscribe-heading fw-bold fs-40 text-white">
+                        Subscribe Our Newsletter
+                    </div>
+                </div>
+                <div class="col-12 my-15">
+                    <p class="text-white fs-18">Subscribe And Get Latest Updates From Us To Your Email</p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <form action="">
+                        <div class="d-flex bg-white rounded-5 align-items-center">
+                            <div class="w-full h-full d-flex align-items-center px-15 gap-10 ">
+                                <span><i class="fa-regular fa-envelope-open"></i></span>
+                                <input type="text" class="form-control rounded-0 h-full bg-transparent border-0 p-0 shadow-none fs-15" placeholder="Enter Your email">
+                            </div>
+                            <button class="common-btn-2 text-decoration-none fw-bold border-0 fs-18 pr-7 py-7 d-flex br-50 align-items-center pl-35 gap-35">
+                                Subscribe
+                                <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+    <footer class="footer bg-[#261010]">
+        <div class="container">
+            <div class="row g-4 py-55">
+                <div class="col-md-3">
+                    <div class="footer-logo h-40">
+                        <img src="assets/img/logo.png" alt="logo" class="h-full">
+                    </div>
+                    <p class="text-[#F4F7FF] lh-32 mt-25 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="fw-medium fs-20 text-white mt-30">Follow Us</div>
+                    <ul class="mb-0 mt-15 p-0 d-flex align-items-center gap-18">
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu d-flex flex-column align-items-center">
+                        <div>
+                            <div class="fw-medium footer-heading fs-20 text-white">Useful Links</div>
+                            <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Refund & Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Complaint</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Quick Links</div>
+                        <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">About The Company</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Customer Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Affiliate Marketing</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Seller Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Contact Info</div>
+                        <ul class="mb-0 mt-12 p-0 d-flex flex-column gap-15">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-solid fa-phone"></i></span>+91 9876543210</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-regular fa-envelope-open"></i></span>info@website.com</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex gap-8 lh-28"><span class="fs-17 mt-1"><i class="fa-solid fa-location-dot"></i></span>#78/B, Cabin No: 02, Lajpat Nagar, New Delhi, India, 891205</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section py-30 d-flex align-items-center justify-content-between">
+                <div class="text-[#b3b2bb] fs-14">
+                    Copyright © 2022 Redhat Safety. All Rights Reserved
+                </div>
+                <div class="d-flex align-items-center gap-30">
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Privacy Policy</a>
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    
+    <!-- js files  -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/color.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- navbar js -->
+    <script>
+        var swiper = new Swiper(".nav-category-slider", {
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 7,
+                spaceBetween: 15,
+                },
+                1024: {
+                slidesPerView: 9,
+                spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- hero slider js -->
+    <script>
+        var swiper = new Swiper(".hero-slider-2", {
+            effect: "cards",
+            //     grabCursor: true,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".hero-slider", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".hero-swiper-pagination",
+                clickable: true,
+                direction: "vertical",
+            },
+            navigation: {
+                nextEl: ".hero-swiper-next",
+                prevEl: ".hero-swiper-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+                                          
+</body>
+</html>

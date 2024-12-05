@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like & Dislike Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.like-dislike-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button i {
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.button span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#like-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#like-button.active i {
+    color: #ffffff;
+}
+
+#dislike-button.active {
+    background-color: #dc3545;
+    color: white;
+}
+
+#dislike-button.active i {
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="like-dislike-container">
+        <!-- Like Button -->
+        <div class="button" id="like-button">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span id="like-count">0</span>
+        </div>
+
+        <!-- Dislike Button -->
+        <div class="button" id="dislike-button">
+            <i class="fa-solid fa-thumbs-down"></i>
+            <span id="dislike-count">0</span>
+        </div>
+    </div>
+
+    <script>
+        let likeCount = 0;
+        let dislikeCount = 0;
+
+        // Get elements
+        const likeButton = document.getElementById('like-button');
+        const dislikeButton = document.getElementById('dislike-button');
+        const likeCountSpan = document.getElementById('like-count');
+        const dislikeCountSpan = document.getElementById('dislike-count');
+
+        // Add event listeners
+        likeButton.addEventListener('click', () => {
+            // Toggle like button
+            if (!likeButton.classList.contains('active')) {
+                likeCount++;
+                likeButton.classList.add('active');
+                // Remove dislike if active
+                if (dislikeButton.classList.contains('active')) {
+                    dislikeCount--;
+                    dislikeButton.classList.remove('active');
+                }
+            } else {
+                likeCount--;
+                likeButton.classList.remove('active');
+            }
+            updateCounts();
+        });
+
+        dislikeButton.addEventListener('click', () => {
+            // Toggle dislike button
+            if (!dislikeButton.classList.contains('active')) {
+                dislikeCount++;
+                dislikeButton.classList.add('active');
+                // Remove like if active
+                if (likeButton.classList.contains('active')) {
+                    likeCount--;
+                    likeButton.classList.remove('active');
+                }
+            } else {
+                dislikeCount--;
+                dislikeButton.classList.remove('active');
+            }
+            updateCounts();
+        });
+
+        // Function to update counts
+        function updateCounts() {
+    likeCountSpan.textContent = likeCount;
+    dislikeCountSpan.textContent = dislikeCount;
+}
+
+    </script>
+</body>
+</html>
