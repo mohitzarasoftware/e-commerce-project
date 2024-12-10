@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section start -->
+    <nav class="main-navbar" id="navbar">
+        <div class="top-bar w-full py-3 d-md-block d-none">
+            <div class="container w-full">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-lg-25 gap-15">
+                            <div class="topbar-social-title fw-medium text-white">
+                                Don’t forgot to follow us:
+                            </div>
+                            <ul class="list-unstyled d-flex mb-0 align-items-center">
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36 text-theme1 hover:text-[#fff] transition"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36 text-theme1 hover:text-[#fff] transition"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36 text-theme1 hover:text-[#fff] transition"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none h-34 w-36 text-theme1 hover:text-[#fff] transition"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="topbar-social-title fw-medium text-white fs-md-16 fs-15">
+                            Customer Support Team: <a href="" class="text-white text-decoration-none transition hover:text-[#FF0004]">+91-98765-43210</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-center py-12">
+            <div class="container">
+                <div class="row justify-content-md-between justify-content-center align-items-center flex-lg-nowrap gap-md-0 gap-18">
+                    <div class="col-auto order-1 nav-logo-main">
+                        <a href="index.html" class="d-flex align-items-center justify-content-center h-41">
+                            <img src="assets/img/logo.png" alt="navbar logo" class="h-full w-full img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 order-lg-2 order-3 mt-lg-0 mt-md-15">
+                        <div class="nav-search-main h-45 d-flex br-5 overflow-hidden">
+                            <div class="nav-search-iput-main bg-white w-full d-flex align-items-center px-13">
+                                <span class="nav-search-icon text-[#5C5C5C] fs-15 d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="h-full form-control shadow-none border-0 fs-14 text-[##5D5D5D]" placeholder="Search products">
+                            </div>
+                            <div class="h-full">
+                                <button class="border-0 nav-search-btn bg-btn-theme1 text-white d-block h-full px-20">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto order-lg-3 order-2 nav-data">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-xl-30 gap-md-20 gap-12">
+                                <div class="d-flex align-items-center gap-xl-25 gap-md-17 gap-12">
+                                    <button class="bg-transparent p-0 border-0">
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="w-24 h-15 d-flex align-items-center justify-content-center"><img src="assets/img/india-flag.svg" alt="india flag" class="h-full w-full img-fluid" width="25" height="16"></span>
+                                            <i class="fa-solid fa-chevron-down text-white fs-13"></i>
+                                        </div>
+                                        <div class="fs-md-13 fs-12 text-white mt-3 ">
+                                            English
+                                        </div>
+                                    </button>
+                                    <div class="nav-user-dropdown position-relative">
+                                        <button class="text-decoration-none border-0 bg-transparent p-0" onclick="nav_user()">
+                                            <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                                <i class="fa-regular fa-user"></i>
+                                            </div>
+                                            <div class="fs-md-13 fs-12 text-white mt-3 ">
+                                                Account
+                                            </div>
+                                        </button>
+                                        <div class="nav-user-detail-main position-absolute" id="nav_user-data">
+                                            <div class="bg-[#FFF4F4] p-30 br-10 nav-user-detail position-relative">
+                                                <div class="d-flex align-items-center user-detail-inner gap-15 pb-15 mb-15">
+                                                    <div class=" nav-user-img rounded-circle overflow-hidden">
+                                                        <img src="assets/img/user.png" alt="user name" class="h-full w-full img-fluid">
+                                                    </div>
+                                                    <div>
+                                                        <div class="nav-user-name fw-medium">User Name</div>
+                                                        <a href="manage-profile.html" class="d-flex align-items-center mt-1 gap-40 text-decoration-none fw-medium text-theme1 text-nowrap">
+                                                            Manage Profile
+                                                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <ul class="d-flex flex-column gap-10 m-0 p-0 list-unstyled ">
+                                                    <li>
+                                                        <a href="" class="fw-medium text-theme1 text-decoration-none transition hover:text-[#383355]">Orders</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="return-policy.html" class="fw-medium text-theme1 text-decoration-none transition hover:text-[#383355]">Cancellation & Refund</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="fw-medium text-theme1 text-decoration-none transition hover:text-[#383355]">Settings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="fw-medium text-theme1 text-decoration-none transition hover:text-[#383355] d-flex align-items-center justify-content-between">
+                                                            Notifications
+                                                            <span class="fw-medium text-white bg-theme1 px-13 py-1 br-5">4</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="d-flex w-full mt-25">
+                                                    <a href="" class="common-btn py-12 px-20 br-5 w-full position-relative overflow-hidden fs-13 text-decoration-none ">
+                                                        <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
+                                                            Log Out
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-center text-white fs-14">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="fs-md-13 fs-12 text-white mt-3 ">
+                                            Favourites 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="nav-cart-btn bg-btn-theme1 d-flex py-10 px-11 br-8 text-decoration-none align-items-center gap-11">
+                                        <span class="d-inline-flex align-items-center nav-btn-icon position-relative justify-content-center h-27">
+                                            <img src="assets/img/cart-icon.svg" alt="cart" class="h-full w-full">
+                                            <span class="text-theme1 h-17 nav-cart-btn-count top-n5 right-n5 w-17 fs-12 rounded-circle d-flex align-items-center justify-content-center bg-white fw-medium position-absolute">
+                                                3
+                                            </span>
+                                        </span>
+                                        <span class="text-[#fff] fs-14 fw-medium d-md-block d-none">$225</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-md-none d-flex align-items-center justify-content-center">
+                                <button class="btn border-0 bg-transparent text-white fs-20" type="button" data-bs-toggle="offcanvas" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end -->
+    
+    <!-- category section start -->
+    <section class="category-section position-relative bg-[#E4DFFF] py-7">
+        <div class="container">
+            <div class="swiper nav-category-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/electric-icon.png" alt="electric" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/kids-fashion.png" alt="kids" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Kids Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/men-category.png" alt="men" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Men Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/women-category.png" alt="women" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Women Fashion</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/grocery.png" alt="grocery" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Grocery</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/personal-care.png" alt="personal care" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Personal Care</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/toys-gifts.png" alt="toys gifts" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Toys & Gifts</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/home-decoration.png" alt="home decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Home Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/office-decoration.png" alt="office decoration" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Office Decoration</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/appliances.png" alt="Appliances" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Appliances</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="shop.html" class="bottom-bar-link text-decoration-none d-inline-flex flex-column">
+                            <span class="d-flex align-items-center justify-content-center h-50">
+                                <img src="assets/img/mobile.png" alt="mobile" class="h-full">
+                            </span>
+                            <span class="text-[#383355] fw-medium fs-14 mt-7 text-nowrap">Mobile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-next h-full bg-white position-absolute d-md-flex d-none align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 end-0"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="swiper-prev h-full bg-white position-absolute d-md-flex d-none align-items-center justify-content-center w-70 fs-14 text-[#9c9c9c] nav-category-slider-btn top-0 start-0"><i class="fa-solid fa-chevron-left"></i></div>
+    </section>
+    <!-- category section end -->
+
+    <!-- manage profile section start -->
+    <section class="manage-profile-section pt-60 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="fw-bolder fs-50 text-theme1 text-center manage-profile-heading position-relative pb-10">
+                        Manage Profile
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center fs-30 text-theme1 fw-medium mt-30">
+                        You can mange all your profile stuff here:
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-40">
+                <div class="col-12">
+                    <div class="d-flex align-items-center gap-25">
+                        <div class="profile-photo-main h-110 w-110 rounded-circle position-relative p-10 d-flex align-items-center justify-content-center">
+                            <div class="h-85 w-85 overflow-hidden rounded-circle">
+                                <img src="assets/img/user.png" alt="profile img" class="h-full w-full img-fluid rounded-circle">
+                            </div>
+                            <button class="position-absolute profile-photo-edit-btn p-0 d-flex align-items-center justify-content-center rounded-circle bg-transparent h-35 w-35 fs-13" data-bs-toggle="modal" data-bs-target="#edit_profile">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <div class="fs-22 fw-medium">User name goes here</div>
+                            <div class="fw-medium fs-18 mt-3">
+                                userid@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-30 justify-content-between">
+                <div class="col-lg-5">
+                    <hr>
+                    <form action="">
+                        <div class="fs-24 fw-medium text-theme1 mt-50">
+                            Edit the info:
+                        </div>
+                        <div class="row mt-25 g-3">
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Mobile No.">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Altername Mobile No.">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="email" class="common-input" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="State">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Pin Code">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <input type="text" class="common-input" placeholder="Country">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex position-relative align-items-center mt-50 gap-15">
+                            <a href="product-detail.html" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
+                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                    Cancel
+                                </span>
+                            </a>
+                            <a href="product-detail.html" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
+                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                    SAVE
+                                </span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <div class="manage-profile-detail-card common-gradient-card position-relative overflow-hidden br-25 p-30">
+                        <div class="position-relative mt-30">
+                            <div class="manage-profile-detail-card-title fw-bold fs-22 text-white border-bottom pb-10">
+                                Other Links
+                            </div>  
+                            <div class="d-flex flex-column gap-20 mt-40">
+                                <div class="fs-20 text-white fw-medium">Your Orders</div>
+                                <div class="fs-20 text-white fw-medium">Wish Lists </div>
+                                <div class="fs-20 text-white fw-medium">Cancellation And Refund</div>
+                                <div class="fs-20 text-white fw-medium">FAQs</div>
+                                <div class="fs-20 text-white fw-medium">Help And Support</div>
+                                <div class="fs-20 text-white fw-medium">Settings</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- manage profile section end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section py-md-100 py-60">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="subscribe-heading fw-bold fs-lg-40 fs-md-32 fs-25 text-white">
+                        Subscribe Our Newsletter
+                    </div>
+                </div>
+                <div class="col-12 my-15">
+                    <p class="text-white fs-md-18 fs-16">Subscribe And Get Latest Updates From Us To Your Email</p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <form action="">
+                        <div class="d-flex bg-white rounded-5 align-items-center">
+                            <div class="w-full h-full d-flex align-items-center px-15 gap-10 ">
+                                <span><i class="fa-regular fa-envelope-open"></i></span>
+                                <input type="text" class="form-control rounded-0 h-full bg-transparent border-0 p-0 shadow-none fs-15" placeholder="Enter Your email">
+                            </div>
+                            <button class="common-btn-2 text-decoration-none fw-bold border-0 fs-md-18 fs-16 pr-7 py-7 d-flex br-50 align-items-center pl-md-35 pl-20 gap-md-35 gap-20">
+                                Subscribe
+                                <span class="common-btn-arrow d-flex align-items-center justify-content-center h-45 w-45 rounded-circle bg-white text-black fs-18">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+    <footer class="footer bg-[#261010]">
+        <div class="container">
+            <div class="row g-4 py-md-55 py-35">
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-logo h-40">
+                        <img src="assets/img/logo.png" alt="logo" class="h-full">
+                    </div>
+                    <p class="text-[#F4F7FF] lh-32 mt-25 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="fw-medium fs-20 text-white mt-md-30 mt-20">Follow Us</div>
+                    <ul class="mb-0 mt-15 p-0 d-flex align-items-center gap-18">
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-icon d-flex  text-decoration-none fs-22 align-items-center justify-content-center h-40 w-40 rounded-circle">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer-menu d-flex flex-column ">
+                        <div>
+                            <div class="fw-medium footer-heading fs-20 text-white">Useful Links</div>
+                            <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Refund & Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Complaint</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Quick Links</div>
+                        <ul class="mb-0 mt-15 p-0 d-flex flex-column gap-12">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">About The Company</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Customer Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Affiliate Marketing</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Seller Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-menu">
+                        <div class="fw-medium footer-heading fs-20 text-white">Contact Info</div>
+                        <ul class="mb-0 mt-12 p-0 d-flex flex-column gap-15">
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-solid fa-phone"></i></span>+91 9876543210</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex align-items-center gap-8"><span class="fs-17"><i class="fa-regular fa-envelope-open"></i></span>info@website.com</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004] d-flex gap-8 lh-28"><span class="fs-17 mt-1"><i class="fa-solid fa-location-dot"></i></span>#78/B, Cabin No: 02, Lajpat Nagar, New Delhi, India, 891205</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section py-md-30 py-20 gap-md-0 gap-15 d-flex align-items-center justify-content-between flex-md-row flex-column">
+                <div class="text-[#b3b2bb] fs-14">
+                    Copyright © 2022 Redhat Safety. All Rights Reserved
+                </div>
+                <div class="d-flex align-items-center gap-30">
+                    <a href="" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Privacy Policy</a>
+                    <a href="terms-condition.html" class="text-decoration-none text-[#b3b2bb] transition hover:text-[#FF0004]">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- navbar contact offcanvas start -->
+    <div class="offcanvas offcanvas-start w-300" tabindex="-1" id="contactoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom">
+          <div class="offcanvas-title fw-semibold fs-18 text-theme1" id="offcanvasExampleLabel">Get In Touch</div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex align-items-center gap-15 flex-column ">
+                <div class="topbar-social-title fw-medium">
+                    Don’t forgot to follow us:
+                </div>
+                <ul class="list-unstyled d-flex mb-0 align-items-center gap-20">
+                    <li>
+                        <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none text-theme1 hover:text-[#383355] transition fs-18"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none text-theme1 hover:text-[#383355] transition fs-18"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none text-theme1 hover:text-[#383355] transition fs-18"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-social-link d-flex align-items-center justify-content-center text-decoration-none text-theme1 hover:text-[#383355] transition fs-18"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topbar-social-title fw-medium d-flex align-items-center flex-column fs-md-16 fs-15 gap-10 mt-30">
+                Customer Support Team: <a href="" class="text-[#FF0004] text-decoration-none transition hover:text-[#383355]">+91-98765-43210</a>
+            </div>
+        </div>
+    </div>
+    <!-- navbar contact offcanvas end -->
+
+    <!-- edit profile photo modal start -->
+    <div class="modal fade edit-profile-photo-modal" id="edit_profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class=" bg-theme1 opacity-100 text-white border-0 br-4 fs-20 px-9 py-2" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                       <form action="">
+                        <div class="profile-phoho-card">
+
+                        </div>
+                            <button class="common-btn border-0 py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
+                                <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                    SAVE
+                                </span>
+                            </button>
+                        </form> 
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- edit profile photo modal end -->
+    
+    <!-- js files  -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/color.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- nav cateogry js -->
+    <script>
+        var swiper = new Swiper(".nav-category-slider", {
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                576: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                767: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 7,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 9,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- hero slider js -->
+    <script>
+        var swiper = new Swiper(".hero-slider-2", {
+            effect: "cards",
+            //     grabCursor: true,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".hero-slider", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".hero-swiper-pagination",
+                clickable: true,
+                direction: "vertical",
+            },
+            navigation: {
+                nextEl: ".hero-swiper-next",
+                prevEl: ".hero-swiper-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+    <script>
+        console.log(document.getElementById('nav_user-data'));
+    </script>
+                                          
+</body>
+</html>

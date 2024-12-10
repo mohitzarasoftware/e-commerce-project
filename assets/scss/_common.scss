@@ -116,4 +116,33 @@ $black:#000;
     }
 }
 
+.common-gradient-card {
+    background: url(../img/checkout-card-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(140.17deg, #ff0004e4 0%, #383355e3 100%);
+        
+    }
+}
+
+// common input 
+.common-input {
+    font-size: 14px;
+    border: 1px solid $theme1;
+    height: 45px;
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+    &:focus {
+        border: 2px solid $theme1;
+    }
+}
 

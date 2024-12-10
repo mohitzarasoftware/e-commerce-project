@@ -1255,6 +1255,7 @@ $black:#000;
     background: url(../img/login-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    padding-bottom: 220px;
     & .login-card {
         background: linear-gradient(140.17deg, rgba($theme1, 0.9) 0%, rgba($theme2, 0.9) 100%);
         & .policy-input-box {
@@ -1282,3 +1283,63 @@ $black:#000;
     
 }
 // create account section end
+
+// manage profile section start
+.manage-profile-section {
+    &::before {
+        content: '';
+        position: absolute;
+        right: 20%;
+        top: 40px;
+        z-index: -1;
+        height: 220px;
+        width: 220px;
+        background: url(../img/product-review-absract.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    & .manage-profile-heading {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 11px;
+            height: 1px ;
+            width: 100%;
+            background-color: $theme1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0px;
+            height: 2px ;
+            width:35%;
+            background-color: $theme1;
+        }
+    }
+    & .profile-photo-main {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: url(../img/profile-photo-shape.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    & .profile-photo-edit-btn {
+        right: -1px;
+        top: -1px;
+        border: 3px solid #FFE4E4
+    }
+    & .edit-profile-photo-modal {
+
+    }
+}
+// manage profile section end
