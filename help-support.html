@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- swiper css  -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- dropzone css -->
+    <link rel="stylesheet" href="assets/libs/dropzone/dropzone.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- special css for this page only -->
+    <style>
+        .subscribe-section {
+            margin-top: -150px !important;
+        }
+    </style>
 </head>
 <body>
     <!-- header section start -->
@@ -269,198 +278,28 @@
     </section>
     <!-- category section end -->
 
-    <!-- manage profile section start -->
-    <section class="manage-profile-section pt-60 position-relative">
+    <!-- help and support section start -->
+    <section class="help-support-section pt-60 position-relative overflow-hidden z-1">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mx-auto">
-                    <div class="fw-bolder fs-50 text-theme1 text-center manage-profile-heading position-relative pb-10">
-                        Manage Profile
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <h1 class="fw-bolder fs-50 text-theme1 help-support-heading position-relative pb-18 mt-25">
+                        Help & Support
+                    </h1>
+                    <div class="fs-30 text-theme1 fw-medium mt-30">
+                        Have a query?
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="text-center fs-30 text-theme1 fw-medium mt-30">
-                        You can mange all your profile stuff here:
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-40">
-                <div class="col-12">
-                    <div class="d-flex align-items-center gap-25">
-                        <div class="profile-photo-main h-110 w-110 rounded-circle position-relative p-10 d-flex align-items-center justify-content-center">
-                            <div class="h-85 w-85 overflow-hidden rounded-circle">
-                                <img src="assets/img/user.png" alt="profile img" class="h-full w-full img-fluid rounded-circle">
-                            </div>
-                            <button class="position-absolute profile-photo-edit-btn p-0 d-flex align-items-center justify-content-center rounded-circle bg-transparent h-35 w-35 fs-13">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <div class="fs-22 fw-medium">User name goes here</div>
-                            <div class="fw-medium fs-18 mt-3">
-                                userid@gmail.com
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-30 justify-content-between">
                 <div class="col-lg-5">
-                    <hr>
-                    <div class="mt-35 d-flex flex-column gap-10">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Full Name
-                                </div>
+                    <div class="help-support-img-card-main pb-40 pl-40 bg-white">
+                        <div class="help-support-img-card overflow-hidden br-20 position-relative">
+                            <div class="h-450">
+                                <img src="assets/img/help-support-img.jpg" alt="help and support" class="w-full h-full">
                             </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> User Full Name
+                            <div class="d-flex align-items-center justify-content-between w-full position-absolute top-0 pr-25">
+                                <div class="help-support-img-card-title position-relative bg-theme1 text-white w-210 d-flex align-items-center gap-8 py-18 px-30 fs-18">
+                                    Help Center
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Mobile Number
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> +91 98765-43210
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Alternate Mobile Number
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> +91 98765-43210
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Email Address
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> userid@gmail.com
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between mt-30">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Address
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> #45, Gali No: 04
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Location
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span>Preet Vihar
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    City
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> #45, Gali No: 04
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    State
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> Delhi
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Pin Code
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> 180054
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex position-relative align-items-center mt-50 gap-15">
-                        <a href="edit-profile.html" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
-                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
-                                Edit PROFILE
-                            </span>
-                        </a>
-                        <a href="" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
-                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
-                                CONTACT US
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="manage-profile-sidebar common-gradient-card position-relative overflow-hidden br-25 p-30">
-                        <div class="position-relative mt-30">
-                            <div class="manage-profile-sidebar-title fw-bold fs-22 text-white border-bottom pb-10">
-                                Other Links
-                            </div>  
-                            <div class="d-flex flex-column gap-20 mt-40">
-                                <a href="order-history.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Your Orders
-                                </a>
-                                <a href="cancel-policy.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Wish Lists
-                                </a>
-                                <a href="cancel-policy.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Cancellation And Refund
-                                </a>
-                                <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    FAQs
-                                </a>
-                                <a href="help-support.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Help And Support
-                                </a>
-                                <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Settings
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -468,10 +307,71 @@
             </div>
         </div>
     </section>
-    <!-- manage profile section end -->
+    <!-- help and support section end -->
+
+    <!-- help and support contact detail section start -->
+    <section class="help-support-detail-section pt-70 pb-90 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="fs-24 text-white">
+                        We and our team are always 
+                    </div>
+                </div>
+                <div class="col-12 mt-90">
+                    <div class="row gap-25">
+                        <div class="col-12">
+                            <a href="tel:+91-98765-43210" class="help-support-detail d-flex align-items-center gap-11 text-decoration-none">
+                                <div class="w-124 h-66 br-8 help-support-detail-icon d-flex align-items-center justify-content-center fs-24 text-white">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-medium fs-17 text-white">Call Us:</div>
+                                    <div class="fw-medium fs-20 mt-3 text-white">  +91-98765-43210</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="mailto:support@website.com" class="help-support-detail d-flex align-items-center gap-11 text-decoration-none">
+                                <div class="w-124 h-66 br-8 help-support-detail-icon d-flex align-items-center justify-content-center fs-24 text-white">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-medium fs-17 text-white">Mail Us:</div>
+                                    <div class="fw-medium fs-20 mt-3 text-white"> support@website.com</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="https://maps.app.goo.gl/cvJMD5qfLR1bJaWB7" class="help-support-detail d-flex align-items-center gap-11 text-decoration-none">
+                                <div class="w-124 h-66 br-8 help-support-detail-icon d-flex align-items-center justify-content-center fs-24 text-white">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-medium fs-17 text-white">Address:</div>
+                                    <div class="fw-medium fs-20 mt-3 text-white">#78/B, Cabin No: 02, Lajpat Nagar, New Delhi, India, 891205</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- help and support contact detail section end -->
+
+    <!-- map section start -->
+    <section class="map-section position-relative z-0 ">
+        <div class="row">
+            <div class="col-12">
+                <iframe class="w-full h-500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.3110592054427!2d78.40764957535578!3d29.15550457538321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390bc1526399f3bf%3A0x16af659491309f37!2sZARA%20SOFTWARE%20PROVIDER!5e0!3m2!1sen!2sin!4v1733949163895!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- map section end -->
 
     <!-- subscribe section start -->
-    <section class="subscribe-section py-md-100 py-60">
+    <section class="subscribe-section py-md-100 py-60 z-1">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
@@ -641,13 +541,40 @@
                 Customer Support Team: <a href="" class="text-[#FF0004] text-decoration-none transition hover:text-[#383355]">+91-98765-43210</a>
             </div>
         </div>
-      </div>
+    </div>
     <!-- navbar contact offcanvas end -->
+
+    <!-- edit profile photo modal start -->
+    <div class="modal fade edit-profile-photo-modal" id="edit_profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class=" bg-theme1 opacity-100 text-white border-0 br-4 fs-20 px-9 py-2" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body px-40 pb-40">
+                    <form action="/upload" class="dropzone h-220 w-220 br-20 mx-auto overh">
+
+                    </form>
+                    <div class="d-flex align-items-center justify-content-center mt-30">
+                        <button class="common-btn border-0 py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
+                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                SAVE
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- edit profile photo modal end -->
     
     <!-- js files  -->
     <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/js/color.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libs/dropzone/dropzone.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <!-- nav cateogry js -->
@@ -709,8 +636,22 @@
     </script>
 
     <script>
-        console.log(document.getElementById('nav_user-data'));
+         // Disable auto-discovery for manual configuration
+        Dropzone.autoDiscover = false;
+        var dropzoneBox1 = new Dropzone(".dropzone", {
+            paramName: "file", // File parameter name
+            maxFiles: 1,       // Only one file can be uploaded
+            maxFilesize: 2,    // Maximum file size (in MB)
+            acceptedFiles: ".jpg,.png,.gif", // Allowed file types
+            init: function () {
+                this.on("maxfilesexceeded", function(file) {
+                    this.removeAllFiles(); // Remove previously uploaded file
+                    this.addFile(file);    // Add the new file
+                });
+            }
+        });
     </script>
+
                                           
 </body>
 </html>

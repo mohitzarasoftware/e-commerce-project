@@ -1,5 +1,5 @@
 $theme1:#FF0004;
-$theme2:#383355;
+$theme2:#FF0004;
 $white:#fff;
 $black:#000;
 
@@ -1338,8 +1338,143 @@ $black:#000;
         top: -1px;
         border: 3px solid #FFE4E4
     }
-    & .edit-profile-photo-modal {
-
+    & .manage-profile-sidebar-link {
+        & .manage-profile-sidebar-link-icon {
+            opacity: 0;
+        }
+        &.active {
+            & .manage-profile-sidebar-link-icon {
+                opacity: 1;
+            }
+        }
     }
 }
 // manage profile section end
+
+// edit profile section start 
+.edit-profile-photo-modal {
+    & .modal-dialog {
+        max-width: 320px !important;
+    }
+    & .dropzone{
+        border: 6px solid #D8D8D8;
+        & .dz-filename {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis ;
+        }
+    }
+}
+// edit profile section end
+
+// order history section start
+.order-history-section {
+    & .order-searchbar {
+        border: 1px solid #FF0004;
+        & select {
+            background: none;
+        }
+    }
+    & .order-history-detail-main {
+        &::-webkit-scrollbar {
+            width: 9px; /* Scrollbar width */
+        }
+        &::-webkit-scrollbar-track {
+            background: #D9D9D9; /* Background of scrollbar track */
+            border-radius: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $theme1; /* Thumb (scroll handle) color */
+            border-radius: 6px;
+        }
+    }
+}
+// order history section end
+
+// help and support section start
+.help-support-section {
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 200px;
+        width: 200px;
+        background: url(../img/product-page-top-shape.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+    }
+    & .help-support-heading {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 11px;
+            height: 1px ;
+            width: 100%;
+            background-color: $theme1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0%;
+            bottom: 0px;
+            height: 2px ;
+            width:35%;
+            background-color: $theme1;
+        }
+    }
+    & .help-support-img-card-main {
+        margin-right: -120px;
+        border-radius: 0 0 0 30px;
+        & .help-support-img-card-title {
+            border-radius: 15px 0px 27px 0px;
+            border: solid $white;
+            border-width: 0 15px 15px 0;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -35px;
+                top: 0;
+                background: url(../img/border-shape.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+// help and support section end
+
+// help and support contact detail section start
+.help-support-detail-section {
+    background: url(../img/help-support-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -200px;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 41.7%;
+        top: -1px;
+        height: 30px;
+        width: 31px;
+        background: url(../img/shop-cta-subtract.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    & .help-support-detail-icon {
+        background: #ffffff21;
+        backdrop-filter: blur(75px)
+
+    }
+}
+// help and support contact detail section end
+
+// map section start
+.map-section {
+    
+}
+// map section end

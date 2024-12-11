@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- swiper css  -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- dropzone css -->
+    <link rel="stylesheet" href="assets/libs/dropzone/dropzone.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font family -->
@@ -270,196 +272,276 @@
     <!-- category section end -->
 
     <!-- manage profile section start -->
-    <section class="manage-profile-section pt-60 position-relative">
+    <section class="manage-profile-section order-history-section pt-60 position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mx-auto">
                     <div class="fw-bolder fs-50 text-theme1 text-center manage-profile-heading position-relative pb-10">
-                        Manage Profile
+                        Manage Order
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="text-center fs-30 text-theme1 fw-medium mt-30">
-                        You can mange all your profile stuff here:
+                        Manage your canceled order, placed order and more 
                     </div>
                 </div>
             </div>
-            <div class="row mt-40">
-                <div class="col-12">
-                    <div class="d-flex align-items-center gap-25">
-                        <div class="profile-photo-main h-110 w-110 rounded-circle position-relative p-10 d-flex align-items-center justify-content-center">
-                            <div class="h-85 w-85 overflow-hidden rounded-circle">
-                                <img src="assets/img/user.png" alt="profile img" class="h-full w-full img-fluid rounded-circle">
-                            </div>
-                            <button class="position-absolute profile-photo-edit-btn p-0 d-flex align-items-center justify-content-center rounded-circle bg-transparent h-35 w-35 fs-13">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <div class="fs-22 fw-medium">User name goes here</div>
-                            <div class="fw-medium fs-18 mt-3">
-                                userid@gmail.com
+            <div class="row mt-90 justify-content-between">
+                <div class="col-lg-6">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <div class="fs-24 fw-bold">
+                                Your Orders
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-30 justify-content-between">
-                <div class="col-lg-5">
-                    <hr>
-                    <div class="mt-35 d-flex flex-column gap-10">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Full Name
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> User Full Name
-                                </div>
+                        <div class="col-5">
+                            <div class="d-flex align-items-center h-47 order-searchbar br-5 overflow-hidden pl-12">
+                                <span class="text-[#5C5C5C] fs-14"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control shadow-none fs-14 h-full px-12 border-0 bg-transparent" placeholder="Search order">
+                                <button class="common-btn position-relative overflow-hidden border-0 h-full d-flex align-items-center justify-content-center px-20">
+                                    <span class="position-relative z-1 fs-15">Search</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Mobile Number
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> +91 98765-43210
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Alternate Mobile Number
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> +91 98765-43210
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Email Address
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> userid@gmail.com
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between mt-30">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Address
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> #45, Gali No: 04
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Location
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span>Preet Vihar
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    City
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> #45, Gali No: 04
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    State
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> Delhi
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col">
-                                <div class="fs-20 fw-medium">
-                                    Pin Code
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-20 fw-medium d-inline-flex align-items-center gap-15">
-                                    <span>:</span> 180054
-                                </div>
+                        <div class="col-4">
+                            <div class="d-flex align-items-center h-47 order-searchbar br-5 overflow-hidden position-relative">
+                                <select name="" id="" class="form-select shadow-none border-0 position-relative z-1 bg-transparent">
+                                    <option value="">Last 3 Months</option>
+                                    <option value="">Last 2 Months</option>
+                                    <option value="">Last 1 Months</option>
+                                    <option value="">Last 2 Weeks</option>
+                                    <option value="">Last 7 Days</option>
+                                    <option value="">Yesterday</option>
+                                    <option value="">Today</option>
+                                </select>
+                                <span class="bg-theme1 h-full position-absolute d-flex end-0 align-items-center justify-content-center px-12">
+                                    <img src="assets/img/filter-icon.svg" alt="filter" height="9">
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex position-relative align-items-center mt-50 gap-15">
-                        <a href="edit-profile.html" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
-                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
-                                Edit PROFILE
-                            </span>
-                        </a>
-                        <a href="" class="common-btn py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
-                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
-                                CONTACT US
-                            </span>
-                        </a>
+                    <hr class="my-35">
+                    <div class="order-history-detail-main h-450 pr-20 overflow-y-auto overflow-x-hidden">
+                        <div class="row gap-35">
+                            <div class="col-12">
+                                <div class="order-history-detail br-8 border overflow-hidden">
+                                    <div class="order-history-detail-header bg-[#FFF4F4] p-20 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="text-theme1 fw-medium">Order Placed On:</div>
+                                            <div class="fw-medium mt-4">Sep 28, 2024</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-theme1 fw-medium text-end">Order ID:</div>
+                                            <div class="fw-medium mt-4">#74294-2948-7294</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-detail-body p-15">
+                                        <div class="order-history-detail-inner">
+                                            <div class="row flex-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="h-100 w-100 overflow-hidden br-8">
+                                                        <img src="assets/img/product-detail-1.png" alt="product" class="h-full w-full img-fluid object-fit-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="fs-18 fw-medium text-nowrap text-truncate ">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                    <div class="order-history-detail-subtitle mt-8 fs-18"><span class="text-theme1">Delivered :</span>20-Sept-2024</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-12">
+                                                        <div class="order-history-detail-subtitle mt-8 fs-18 text-truncate"><span class="text-theme1">Supplier :</span> New Door Fashion Textile Pvt. Ltd.</div>
+                                                        <a href="" class="text-decoration-none text-[#FF0004] text-nowrap hover:text-[#383355] transition d-flex align-items-center gap-8 fs-18">
+                                                            <img src="assets/img/download-icon.svg" alt="donwload" height="18">
+                                                            Download Invoice
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="order-history-detail br-8 border overflow-hidden">
+                                    <div class="order-history-detail-header bg-[#FFF4F4] p-20 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="text-theme1 fw-medium">Order Placed On:</div>
+                                            <div class="fw-medium mt-4">Sep 28, 2024</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-theme1 fw-medium text-end">Order ID:</div>
+                                            <div class="fw-medium mt-4">#74294-2948-7294</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-detail-body p-15">
+                                        <div class="order-history-detail-inner">
+                                            <div class="row flex-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="h-100 w-100 overflow-hidden br-8">
+                                                        <img src="assets/img/product-detail-1.png" alt="product" class="h-full w-full img-fluid object-fit-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="fs-18 fw-medium text-nowrap text-truncate ">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                    <div class="order-history-detail-subtitle mt-8 fs-18"><span class="text-theme1">Delivered :</span>20-Sept-2024</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-12">
+                                                        <div class="order-history-detail-subtitle mt-8 fs-18 text-truncate"><span class="text-theme1">Supplier :</span> New Door Fashion Textile Pvt. Ltd.</div>
+                                                        <a href="" class="text-decoration-none text-[#FF0004] text-nowrap hover:text-[#383355] transition d-flex align-items-center gap-8 fs-18">
+                                                            <img src="assets/img/download-icon.svg" alt="donwload" height="18">
+                                                            Download Invoice
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="order-history-detail br-8 border overflow-hidden">
+                                    <div class="order-history-detail-header bg-[#FFF4F4] p-20 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="text-theme1 fw-medium">Order Placed On:</div>
+                                            <div class="fw-medium mt-4">Sep 28, 2024</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-theme1 fw-medium text-end">Order ID:</div>
+                                            <div class="fw-medium mt-4">#74294-2948-7294</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-detail-body p-15">
+                                        <div class="order-history-detail-inner">
+                                            <div class="row flex-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="h-100 w-100 overflow-hidden br-8">
+                                                        <img src="assets/img/product-detail-1.png" alt="product" class="h-full w-full img-fluid object-fit-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="fs-18 fw-medium text-nowrap text-truncate ">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                    <div class="order-history-detail-subtitle mt-8 fs-18"><span class="text-theme1">Delivered :</span>20-Sept-2024</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-12">
+                                                        <div class="order-history-detail-subtitle mt-8 fs-18 text-truncate"><span class="text-theme1">Supplier :</span> New Door Fashion Textile Pvt. Ltd.</div>
+                                                        <a href="" class="text-decoration-none text-[#FF0004] text-nowrap hover:text-[#383355] transition d-flex align-items-center gap-8 fs-18">
+                                                            <img src="assets/img/download-icon.svg" alt="donwload" height="18">
+                                                            Download Invoice
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="order-history-detail br-8 border overflow-hidden">
+                                    <div class="order-history-detail-header bg-[#FFF4F4] p-20 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="text-theme1 fw-medium">Order Placed On:</div>
+                                            <div class="fw-medium mt-4">Sep 28, 2024</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-theme1 fw-medium text-end">Order ID:</div>
+                                            <div class="fw-medium mt-4">#74294-2948-7294</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-detail-body p-15">
+                                        <div class="order-history-detail-inner">
+                                            <div class="row flex-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="h-100 w-100 overflow-hidden br-8">
+                                                        <img src="assets/img/product-detail-1.png" alt="product" class="h-full w-full img-fluid object-fit-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="fs-18 fw-medium text-nowrap text-truncate ">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                    <div class="order-history-detail-subtitle mt-8 fs-18"><span class="text-theme1">Delivered :</span>20-Sept-2024</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-12">
+                                                        <div class="order-history-detail-subtitle mt-8 fs-18 text-truncate"><span class="text-theme1">Supplier :</span> New Door Fashion Textile Pvt. Ltd.</div>
+                                                        <a href="" class="text-decoration-none text-[#FF0004] text-nowrap hover:text-[#383355] transition d-flex align-items-center gap-8 fs-18">
+                                                            <img src="assets/img/download-icon.svg" alt="donwload" height="18">
+                                                            Download Invoice
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="order-history-detail br-8 border overflow-hidden">
+                                    <div class="order-history-detail-header bg-[#FFF4F4] p-20 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="text-theme1 fw-medium">Order Placed On:</div>
+                                            <div class="fw-medium mt-4">Sep 28, 2024</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-theme1 fw-medium text-end">Order ID:</div>
+                                            <div class="fw-medium mt-4">#74294-2948-7294</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-detail-body p-15">
+                                        <div class="order-history-detail-inner">
+                                            <div class="row flex-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="h-100 w-100 overflow-hidden br-8">
+                                                        <img src="assets/img/product-detail-1.png" alt="product" class="h-full w-full img-fluid object-fit-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="fs-18 fw-medium text-nowrap text-truncate ">
+                                                        This is the detailed product title with some short description
+                                                    </div>
+                                                    <div class="order-history-detail-subtitle mt-8 fs-18"><span class="text-theme1">Delivered :</span>20-Sept-2024</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-12">
+                                                        <div class="order-history-detail-subtitle mt-8 fs-18 text-truncate"><span class="text-theme1">Supplier :</span> New Door Fashion Textile Pvt. Ltd.</div>
+                                                        <a href="" class="text-decoration-none text-[#FF0004] text-nowrap hover:text-[#383355] transition d-flex align-items-center gap-8 fs-18">
+                                                            <img src="assets/img/download-icon.svg" alt="donwload" height="18">
+                                                            Download Invoice
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="manage-profile-sidebar common-gradient-card position-relative overflow-hidden br-25 p-30">
+                    <div class="manage-profile-detail-card common-gradient-card position-relative overflow-hidden br-25 p-30">
                         <div class="position-relative mt-30">
-                            <div class="manage-profile-sidebar-title fw-bold fs-22 text-white border-bottom pb-10">
+                            <div class="manage-profile-detail-card-title fw-bold fs-22 text-white border-bottom pb-10">
                                 Other Links
                             </div>  
                             <div class="d-flex flex-column gap-20 mt-40">
-                                <a href="order-history.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
+                                <a href="order-history.html" class="fs-20 text-white manage-profile-sidebar-link active fw-medium text-decoration-none d-flex align-items-center gap-6">
                                     <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
                                     Your Orders
                                 </a>
-                                <a href="cancel-policy.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
+                                <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
                                     <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Wish Lists
-                                </a>
-                                <a href="cancel-policy.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Cancellation And Refund
+                                    Buy Again   
                                 </a>
                                 <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
                                     <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    FAQs
+                                    Not Yet Shipped  
+                                </a>
+                                <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
+                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
+                                    Canceled Orders
                                 </a>
                                 <a href="help-support.html" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
                                     <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
                                     Help And Support
-                                </a>
-                                <a href="" class="fs-20 text-white manage-profile-sidebar-link fw-medium text-decoration-none d-flex align-items-center gap-6">
-                                    <span class="manage-profile-sidebar-link-icon"><img src="assets/img/check-icon.svg" alt="your order" height="20" width="22"></span>
-                                    Settings
                                 </a>
                             </div>
                         </div>
@@ -641,13 +723,40 @@
                 Customer Support Team: <a href="" class="text-[#FF0004] text-decoration-none transition hover:text-[#383355]">+91-98765-43210</a>
             </div>
         </div>
-      </div>
+    </div>
     <!-- navbar contact offcanvas end -->
+
+    <!-- edit profile photo modal start -->
+    <div class="modal fade edit-profile-photo-modal" id="edit_profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class=" bg-theme1 opacity-100 text-white border-0 br-4 fs-20 px-9 py-2" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body px-40 pb-40">
+                    <form action="/upload" class="dropzone h-220 w-220 br-20 mx-auto overh">
+
+                    </form>
+                    <div class="d-flex align-items-center justify-content-center mt-30">
+                        <button class="common-btn border-0 py-15 px-20 br-5 position-relative overflow-hidden fs-13 text-decoration-none  w-full">
+                            <span class="d-flex lh-13 justify-content-center align-items-center gap-15 position-relative z-1">
+                                SAVE
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- edit profile photo modal end -->
     
     <!-- js files  -->
     <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/js/color.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libs/dropzone/dropzone.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <!-- nav cateogry js -->
@@ -709,8 +818,22 @@
     </script>
 
     <script>
-        console.log(document.getElementById('nav_user-data'));
+         // Disable auto-discovery for manual configuration
+        Dropzone.autoDiscover = false;
+        var dropzoneBox1 = new Dropzone(".dropzone", {
+            paramName: "file", // File parameter name
+            maxFiles: 1,       // Only one file can be uploaded
+            maxFilesize: 2,    // Maximum file size (in MB)
+            acceptedFiles: ".jpg,.png,.gif", // Allowed file types
+            init: function () {
+                this.on("maxfilesexceeded", function(file) {
+                    this.removeAllFiles(); // Remove previously uploaded file
+                    this.addFile(file);    // Add the new file
+                });
+            }
+        });
     </script>
+
                                           
 </body>
 </html>
