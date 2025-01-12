@@ -1,5 +1,5 @@
 $theme1:#FF0004;
-$theme2:#FF0004;
+$theme2:#383355;
 $white:#fff;
 $black:#000;
 
@@ -1475,6 +1475,163 @@ $black:#000;
 
 // map section start
 .map-section {
-    
+    height: 650px;
 }
 // map section end
+
+// dashboard section start
+.dashboard-main-section {
+    &::before {
+        content: '';
+        position: absolute;
+        left: -200px;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(250, 229, 230, 0) 0%, #FAE5E6 100%);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 20%;
+        top: 10%;
+        height: 270px;
+        width: 270px;
+        background: url(../img/product-review-absract.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: -1;
+    }
+    & .dashboard-main-sidebar {
+        box-shadow: 50px 0px 70px -20px #00000080;
+        position: sticky;
+        top: 80px;
+        & .dashboard-sidebar-drop-btn {
+            &::before {
+                content: '\f107';
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: 'Font awesome 6 free';
+                font-weight: 900;
+                transition: all 0.3s ease-in-out;
+            }
+            &:not(.collapsed){
+                &::before {
+                    transform: translateY(-50%) rotate(-180deg);
+                }
+            }
+        }
+        & .dashboard-sidebar-submenu {
+            & li {
+                &::marker {
+                    color:$white;
+                }
+            }
+            & a {
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .dashboard-main-sidebar-footer {
+            & .dashboard-main-sidebar-footer-link {
+                color: $white;;
+                transition: all 0.3s ease-in-out;
+                border-right: 1px solid #B87282;
+                &:hover {
+                    color: $theme1;
+                }
+            }
+        }
+    }
+    & .dash-userdetail-card {
+        background: url(../img/card-bg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 22px;
+        border-radius: 14px;
+        & .dash-user-img {
+            height: 60px;
+            width: 60px;
+            border: 3px solid #ABABAB;
+        }
+        & .dash-userdetail-card-data {
+            & .progress {
+                height: 7px;
+            }
+            & .progress-bar {
+                background-color: #4AE447;
+            }
+        }
+    }
+    & .dash-user-img {
+        & .dash-user-img-logo {
+            z-index: -1;
+        }
+    }
+    & .recent-order-card {
+        & .recent-order-user-img {
+            border: 4px solid #ABABAB;
+            min-width: 65px;
+            height: 65px;
+            width: 65px;
+        }
+        & .payment-status-select {
+            --bs-form-select-bg-img:url(../img/down-arrow.svg);
+            background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+        }
+        & .recent-order-card-status-title {
+            border-right: 1px solid #C60003;
+        }
+        & .recent-order-card-history-img {
+            min-width: 91px;
+            width: 91px;
+        }
+    }
+    & .quick-overview-card {
+        background: rgba(255, 255, 255, 1);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 306px;
+            height: 260px;
+            top: -160px;
+            left: -90px;
+            background: linear-gradient(18.4deg, rgba(253, 165, 69, 0.5) 18.37%, rgba(226, 219, 253, 0.5) 75.86%);
+            border-radius: 50%;
+            transform: rotate(90deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 157px;
+            height: 100%;
+            top: 0px;
+            right: -17px;
+            background: url(../img/recharge-card-shape.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        & .recharge-plans-card-title {
+            color: #727272;
+        }
+        & .recharge-plans-card-img {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+// dashboard section end
+
+
+// add product page start
+.add-product-section {
+    & .dropzone {
+        border: 2px dashed #FF0004
+    }
+}
+// add product page end

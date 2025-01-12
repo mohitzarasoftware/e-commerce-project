@@ -54,6 +54,9 @@ $black:#000;
 .text-theme1 {
     color: #FF0004;
 }
+.border-theme1 {
+    border-color:$theme1 !important ;
+}
 .common-btn {
     background-color: $theme1;
     color: $white;
@@ -139,13 +142,21 @@ $black:#000;
 .common-input {
     font-size: 14px;
     border: 1px solid $theme1;
-    height: 45px;
+    height: 46px;
     width: 100%;
     border-radius: 7px;
     padding: 10px;
     outline: none;
+    color: #00000080;
     &:focus {
         border: 2px solid $theme1;
+    }
+    &.common-select {
+        --bs-form-select-bg-img: url(../img/down-arrow-color.svg);
+        background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: 12px 9px;
     }
 }
 
