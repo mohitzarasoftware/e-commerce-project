@@ -205,7 +205,7 @@
                                       <div class="accordion-body px-5 pt-12 pb-10">
                                         <ul class="dashboard-sidebar-submenu d-flex flex-column gap-6 mb-0">
                                           <li><a href="" class="text-white dashboard-sidebar-link">Category List</a></li>
-                                          <li><a href="" class="text-white dashboard-sidebar-link">Add New Category</a></li>
+                                          <li><a href="dashboard-add-new-category.html" class="text-white dashboard-sidebar-link">Add New Category</a></li>
                                         </ul>
                                       </div>
                                     </div>
@@ -313,181 +313,315 @@
                         </div>
                     </div>
                     <div class="recent-order-section mt-80">
-                        <div class="bg-[#FFDFDF] text-theme1 fw-bold fs-22 py-5 px-30 br-5 recent-order-heading">Recent Orders</div>
+                        <div class="bg-[#FFDFDF] py-7 px-30 br-5">
+                            <ul class="m-0 p-0 d-flex align-items-center list-unstyled">
+                                <li>
+                                    <a href="" class="text-decoration-none text-theme1 fs-20">Store<i class="fa-solid fa-angle-right fs-16 mb-1 mx-8"></i></a>
+                                </li>
+                                <li class=" text-theme1 fs-20 fw-bold"> Product List</li>
+                            </ul>
+                        </div>
                         <div class="d-flex flex-column">
-                            <div class="recent-order-card p-25 bg-[#F7F7F7] d-flex gap-30 br-5">
-                                <div class="mt-45 d-flex flex-column gap-25">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="d-flex align-items-center gap-15 overflow-hidden">
-                                                <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
-                                                    <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
-                                                </div>
-                                                <div>
-                                                    <div class="fw-medium fs-18 text-truncate">
-                                                        This is the detailed product title with some short description
-                                                    </div>
-                                                    <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
-                                                    <div class="mt-5">
-                                                        <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
-                                                            Qty. <div class="text-theme1">2 </div>
-                                                            <div>( X 249.00 )</div>
+                            <div>
+                                <ul class="nav nav-tabs product-list-tab gap-10 d-flex align-items-center justify-content-end border-0 mt-20" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0 active" id="all-product-tab" data-bs-toggle="tab" data-bs-target="#all-product-tab-pane" type="button" role="tab" aria-controls="all-product-tab-pane" aria-selected="true">All</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0" id="electronics-product-tab" data-bs-toggle="tab" data-bs-target="#electronics-product-tab-pane" type="button" role="tab" aria-controls="electronics-product-tab-pane" aria-selected="false">Electronics</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0" id="fashion-product-tab" data-bs-toggle="tab" data-bs-target="#fashion-product-tab-pane" type="button" role="tab" aria-controls="fashion-product-tab-pane" aria-selected="false">Fashion</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-45" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="all-product-tab-pane" role="tabpanel" aria-labelledby="all-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="fw-medium fs-22 text-black text-end">
-                                                498.00 /-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="d-flex align-items-center gap-15 overflow-hidden">
-                                                <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
-                                                    <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
-                                                </div>
-                                                <div>
-                                                    <div class="fw-medium fs-18 text-truncate">
-                                                        This is the detailed product title with some short description
-                                                    </div>
-                                                    <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
-                                                    <div class="mt-5">
-                                                        <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
-                                                            Qty. <div class="text-theme1">2 </div>
-                                                            <div>( X 249.00 )</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="fw-medium fs-22 text-black text-end border-bottom border-theme1 pb-27">
-                                                498.00 /-
-                                            </div>
-                                            <div class="fw-medium fs-22 text-theme1 text-end mt-10 lh-22">
-                                                498.00 /-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-5">
-                                        <div class="col-md-8">
-                                            <div class="d-flex gap-15">
-                                                <a href="" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fw-medium w-full fs-13 text-decoration-none ">
-                                                    <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
-                                                        FULLFILL ORDER
-                                                    </span>
-                                                </a>
-                                                <a href="" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fw-medium w-full fs-13 text-decoration-none ">
-                                                    <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
-                                                        CANCEL ORDER
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="recent-order-card p-25 bg-[#F7F7F7] d-flex gap-30 br-5">
-                                <div class="recent-order-user-img overflow-hidden rounded-circle">
-                                    <img src="assets/img/user.png" alt="user" class="h-full w-full img-fluid">
-                                </div>
-                                <div class="w-full">
-                                    <div class="row w-full">
-                                        <div class="col-8">
-                                            <div class="pb-15 border-bottom">
-                                                <div class="recent-order-user-name fw-medium text-theme1 fs-18">
-                                                    userid@gmail.com / +91-98765-43210
-                                                </div>
-                                                <div class="recent-order-location fw-medium text-[#8E8E8E] mt-5">
-                                                    <span class=" text-black">Shipping Address:</span> #45-A, Complex Flats, Madhuri Chaunk, Delhi, 120045
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div>
-                                                <div class="bg-theme1 d-flex align-items-center recent-order-card-status text-nowrap py-7 px-15 br-30">
-                                                    <div class="fw-medium text-[#D4D4D4] recent-order-card-status-title pr-10 fs-17">Payment Status:</div>
-                                                    <select name="" id="" class="form-select payment-status-select py-0 bg-transparent border-0 shadow-none text-white fw-medium fs-17">
-                                                        <option value="Pending" class="text-black">Pending</option>
-                                                        <option value="paid" class="text-black">Paid</option>
-                                                    </select>
-                                                </div>
-                                                <button class="bg-[#FFDFDF] border-0 w-full mt-12 fw-medium py-7 br-30 text-[#FF0004] hover:bg-[#FF0004] hover:text-[#fff] transition">Create Invoice</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-45 d-flex flex-column gap-25">
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <div class="d-flex align-items-center gap-15 overflow-hidden">
-                                                    <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
-                                                        <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
-                                                    </div>
-                                                    <div>
-                                                        <div class="fw-medium fs-18 text-truncate">
-                                                            This is the detailed product title with some short description
-                                                        </div>
-                                                        <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
-                                                        <div class="mt-5">
-                                                            <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
-                                                                Qty. <div class="text-theme1">2 </div>
-                                                                <div>( X 249.00 )</div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="fw-medium fs-22 text-black text-end">
-                                                    498.00 /-
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <div class="d-flex align-items-center gap-15 overflow-hidden">
-                                                    <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
-                                                        <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
-                                                    </div>
-                                                    <div>
-                                                        <div class="fw-medium fs-18 text-truncate">
-                                                            This is the detailed product title with some short description
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
                                                         </div>
-                                                        <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
-                                                        <div class="mt-5">
-                                                            <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
-                                                                Qty. <div class="text-theme1">2 </div>
-                                                                <div>( X 249.00 )</div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="fw-medium fs-22 text-black text-end border-bottom border-theme1 pb-27">
-                                                    498.00 /-
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
                                                 </div>
-                                                <div class="fw-medium fs-22 text-theme1 text-end mt-10 lh-22">
-                                                    498.00 /-
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row mt-5">
-                                            <div class="col-md-8">
-                                                <div class="d-flex gap-15">
-                                                    <a href="" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fw-medium w-full fs-13 text-decoration-none ">
-                                                        <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
-                                                            FULLFILL ORDER
-                                                        </span>
-                                                    </a>
-                                                    <a href="" class="common-btn py-12 px-20 br-5 position-relative overflow-hidden fw-medium w-full fs-13 text-decoration-none ">
-                                                        <span class="d-flex justify-content-center align-items-center gap-8 position-relative z-1">
-                                                            CANCEL ORDER
-                                                        </span>
-                                                    </a>
+                                    </div>
+                                    <div class="tab-pane fade" id="electronics-product-tab-pane" role="tabpanel" aria-labelledby="electronics-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="fashion-product-tab-pane" role="tabpanel" aria-labelledby="fashion-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,46 +629,312 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="quick-overview-section mt-70">
-                        <div class="bg-[#FFDFDF] text-theme1 fw-bold fs-22 py-5 px-30 br-5 quick-overview-heading">Quick Overview</div>
-                        <div class="row g-3 mt-20 pl-30">
-                            <div class="col-md-4">
-                                <div class="quick-overview-card br-10 d-flex align-items-center justify-content-between pl-20 py-15 pr-8 overflow-hidden rounded-10 position-relative">
-                                    <div class=" position-relative">
-                                        <div class="recharge-plans-card-title fs-18">Product Listed</div>
-                                        <div class="recharge-plans-card-subtitle fs-24 mt-8 fw-bolder text-theme1">150</div>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <div class="h-55 w-55 p-5 rounded-circle bg-white recharge-plans-card-img d-flex align-items-center justify-content-center">
-                                            <img src="assets/img/list-icon.svg" alt="Product Listed " class="h-20">
+                        <div class="bg-[#FFDFDF] py-7 px-30 br-5 mt-70 text-theme1 fs-20 fw-bold">
+                            Deleted Product
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div>
+                                <ul class="nav nav-tabs product-list-tab gap-10 d-flex align-items-center justify-content-end border-0 mt-20" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0 active" id="all-product-tab" data-bs-toggle="tab" data-bs-target="#all-product-tab-pane" type="button" role="tab" aria-controls="all-product-tab-pane" aria-selected="true">All</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0" id="electronics-product-tab" data-bs-toggle="tab" data-bs-target="#electronics-product-tab-pane" type="button" role="tab" aria-controls="electronics-product-tab-pane" aria-selected="false">Electronics</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link fs-15 px-20 border-0" id="fashion-product-tab" data-bs-toggle="tab" data-bs-target="#fashion-product-tab-pane" type="button" role="tab" aria-controls="fashion-product-tab-pane" aria-selected="false">Fashion</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-45" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="all-product-tab-pane" role="tabpanel" aria-labelledby="all-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4">
-                                <div class="quick-overview-card br-10 d-flex align-items-center justify-content-between pl-20 py-15 pr-8 overflow-hidden rounded-10 position-relative">
-                                    <div class=" position-relative">
-                                        <div class="recharge-plans-card-title fs-18">Product Sold</div>
-                                        <div class="recharge-plans-card-subtitle fs-24 mt-8 fw-bolder text-theme1">35</div>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <div class="h-55 w-55 p-5 rounded-circle bg-white recharge-plans-card-img d-flex align-items-center justify-content-center">
-                                            <img src="assets/img/list-dots.svg" alt="Product Sold " class="h-20">
+                                    <div class="tab-pane fade" id="electronics-product-tab-pane" role="tabpanel" aria-labelledby="electronics-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="quick-overview-card br-10 d-flex align-items-center justify-content-between pl-20 py-15 pr-8 overflow-hidden rounded-10 position-relative">
-                                    <div class=" position-relative">
-                                        <div class="recharge-plans-card-title fs-18">Net Profit</div>
-                                        <div class="recharge-plans-card-subtitle fs-24 mt-8 fw-bolder text-theme1">35%</div>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <div class="h-55 w-55 p-5 rounded-circle bg-white recharge-plans-card-img d-flex align-items-center justify-content-center">
-                                            <img src="assets/img/cash-coin.svg" alt="Net Profit " class="h-20">
+                                    <div class="tab-pane fade" id="fashion-product-tab-pane" role="tabpanel" aria-labelledby="fashion-product-tab" tabindex="0">
+                                        <div class=" d-flex flex-column gap-25">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="d-flex align-items-center gap-15 overflow-hidden">
+                                                        <div class="h-91 w-91 recent-order-card-history-img overflow-hidden br-10 ">
+                                                            <img src="assets/img/product-detail-1.png" alt="product name" class="w-full h-full img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-medium fs-18 text-truncate">
+                                                                This is the detailed product title with some short description
+                                                            </div>
+                                                            <div class="border-bottom text-[#8E8E8E] pb-8 mt-2"><i>#898-893849-4545 (Order Placed: 02 Nov, 2024 03:14:12)</i></div>
+                                                            <div class="mt-5 d-flex align-items-center gap-18">
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    In Stock.<div class="text-theme1">2 </div>
+                                                                </div>
+                                                                <div class="h-20 w-1 bg-black"></div>
+                                                                <div class="fw-medium fs-18 text-[#8E8E8E] d-flex align-items-center gap-12">
+                                                                    Selling Price:<div class="text-theme1">498.00 /- </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex gap-25 justify-content-end">
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-eye"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-solid fa-trash-can"></i></button>
+                                                        <button class="p-0 bg-transparent border-0 text-theme1"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
